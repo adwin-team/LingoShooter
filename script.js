@@ -77,7 +77,7 @@ class Game {
         this.startTime = 0;
         this.lastFrameTime = 0;
         this.difficulty = 1.0;
-        this.lastQuestionId = null;
+        this.questionHistory = []; // 出題済みの問題ID履歴
 
         // DOM Elements
         this.hpBar = document.getElementById('hp-bar');
@@ -133,15 +133,26 @@ class Game {
     nextQuestion() {
         if (!this.gameActive || this.questions.length === 0) return;
 
+        // 除外する履歴の長さを決定（問題数の半分、最小1）
+        const historyLimit = Math.max(1, Math.floor(this.questions.length / 2));
+
         let availableQuestions = this.questions;
-        // 2問以上ある場合のみ、直近の問題を除外
-        if (this.questions.length > 1 && this.lastQuestionId) {
-            availableQuestions = this.questions.filter(q => q.id !== this.lastQuestionId);
+        if (this.questions.length > 1) {
+            availableQuestions = this.questions.filter(q => !this.questionHistory.includes(q.id));
         }
+
+        // 万が一除外されすぎて空になった場合のセーフティ
+        if (availableQuestions.length === 0) availableQuestions = this.questions;
 
         const questionData = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
         this.currentQuestion = questionData;
-        this.lastQuestionId = questionData.id;
+
+        // 履歴の更新
+        this.questionHistory.push(questionData.id);
+        if (this.questionHistory.length > historyLimit) {
+            this.questionHistory.shift(); // 古い履歴を削除
+        }
+
         this.questionText.textContent = questionData.question;
         this.enemyDistance = 0;
         this.startTime = performance.now();
