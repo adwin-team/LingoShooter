@@ -1,0 +1,72 @@
+[
+  {
+    "id": "q_0001",
+    "level": 1,
+    "category": "daily",
+    "question": "How are you today?",
+    "choices": [
+      "I'm fine, thank you.",
+      "Yes, I am.",
+      "I go to school.",
+      "At seven o'clock."
+    ],
+    "answer": 0,
+    "explanation": "挨拶への自然な返答。"
+  },
+  {
+    "id": "q_0002",
+    "level": 1,
+    "category": "daily",
+    "question": "What time is it now?",
+    "choices": [
+      "It's sunny.",
+      "It's ten o'clock.",
+      "I'm hungry.",
+      "Yes, please."
+    ],
+    "answer": 1,
+    "explanation": "時間を尋ねる問いへの返答。"
+  },
+  {
+    "id": "q_0003",
+    "level": 1,
+    "category": "daily",
+    "question": "Where is the nearest station?",
+    "choices": [
+      "I like trains.",
+      "Go straight and turn left.",
+      "Yesterday morning.",
+      "By bus."
+    ],
+    "answer": 1,
+    "explanation": "場所を尋ねる問いへの道案内。"
+  },
+  {
+    "id": "q_0004",
+    "level": 2,
+    "category": "business",
+    "question": "Could you please repeat that?",
+    "choices": [
+      "No, I can't.",
+      "Sure, I'll say it again.",
+      "I don't know.",
+      "You're welcome."
+    ],
+    "answer": 1,
+    "explanation": "聞き返しに対する丁寧な承諾。"
+  },
+  {
+    "id": "q_0005",
+    "level": 2,
+    "category": "travel",
+    "question": "How much is this souvenir?",
+    "choices": [
+      "It's very beautiful.",
+      "It costs 10 dollars.",
+      "I bought it yesterday.",
+      "No, thank you."
+    ],
+    "answer": 1,
+    "explanation": "値段を尋ねる問いへの返答。"
+  }
+]

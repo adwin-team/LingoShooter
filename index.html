@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LingoShooter - 語学学習シューティング</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="game-container">
+        <!-- プレイヤーステータス -->
+        <header id="game-header">
+            <div class="status-item">
+                <span class="label">HP</span>
+                <div class="progress-bar">
+                    <div id="hp-bar" class="progress-fill" style="width: 100%;"></div>
+                </div>
+            </div>
+            <div class="status-item">
+                <span class="label">SCORE</span>
+                <span id="score">000000</span>
+            </div>
+        </header>
+
+        <!-- メインバトルフィールド -->
+        <main id="battle-field">
+            <div id="enemy-container">
+                <!-- 敵キャラクターはJSで動的に追加 -->
+                <div id="enemy" class="enemy-sprite">
+                    <div class="enemy-glow"></div>
+                </div>
+            </div>
+            
+            <div id="player-container">
+                <div id="player" class="player-sprite"></div>
+            </div>
+
+            <!-- エフェクトレイヤー -->
+            <div id="effect-layer"></div>
+        </main>
+
+        <!-- 問題表示エリア -->
+        <section id="question-area">
+            <div id="question-box">
+                <p id="question-text">Loading mission...</p>
+            </div>
+            <div id="choices-grid">
+                <button class="choice-btn" data-index="0"></button>
+                <button class="choice-btn" data-index="1"></button>
+                <button class="choice-btn" data-index="2"></button>
+                <button class="choice-btn" data-index="3"></button>
+            </div>
+            <div id="reload-overlay" class="hidden">
+                <span class="reload-text">RELOADING...</span>
+                <div class="reload-bar"><div id="reload-fill"></div></div>
+            </div>
+        </section>
+
+        <!-- ゲームオーバー画面 -->
+        <div id="game-over" class="overlay hidden">
+            <div class="overlay-content">
+                <h1>MISSION FAILED</h1>
+                <p>FINAL SCORE: <span id="final-score">0</span></p>
+                <button id="retry-btn">RETRY</button>
+            </div>
+        </div>
+
+        <!-- スタート画面 -->
+        <div id="start-screen" class="overlay">
+            <div class="overlay-content">
+                <h1 class="game-title">LINGO<span>SHOOTER</span></h1>
+                <p class="game-desc">回答して敵を撃破せよ。時間がかかるとダメージを受ける。</p>
+                <button id="start-btn">START MISSION</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
