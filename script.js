@@ -132,13 +132,24 @@ class Game {
     nextQuestion() {
         if (!this.gameActive || this.questions.length === 0) return;
 
-        this.currentQuestion = this.questions[Math.floor(Math.random() * this.questions.length)];
-        this.questionText.textContent = this.currentQuestion.question;
+        const questionData = this.questions[Math.floor(Math.random() * this.questions.length)];
+        this.currentQuestion = questionData;
+        this.questionText.textContent = questionData.question;
         this.enemyDistance = 0;
         this.startTime = performance.now();
 
+        // 選択肢に元のインデックスを紐付けてからシャッフル
+        const choices = questionData.choices.map((text, index) => ({ text, originalIndex: index }));
+        for (let i = choices.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [choices[i], choices[j]] = [choices[j], choices[i]];
+        }
+
+        this.shuffledChoices = choices;
+        this.currentCorrectIndex = choices.findIndex(c => c.originalIndex === questionData.answer);
+
         this.choiceBtns.forEach((btn, i) => {
-            btn.textContent = this.currentQuestion.choices[i] || "";
+            btn.textContent = choices[i].text || "";
             btn.classList.remove('correct', 'wrong');
             btn.disabled = false;
         });
@@ -150,18 +161,19 @@ class Game {
     handleAnswer(index) {
         if (this.isReloading || !this.gameActive) return;
 
-        const isCorrect = (index === this.currentQuestion.answer);
+        const isCorrect = (index === this.currentCorrectIndex);
         const timeTaken = (performance.now() - this.startTime) / 1000;
 
         // 履歴保存 (バックグラウンド)
         HistoryManager.save({
             question_id: this.currentQuestion.id,
             correct: isCorrect,
-            answer_index: index,
+            answer_index: this.shuffledChoices[index].originalIndex,
             time: timeTaken
         });
 
         if (isCorrect) {
+            this.choiceBtns[index].classList.add('correct');
             this.score += Math.max(10, Math.floor(100 - this.enemyDistance));
             this.difficulty += 0.05;
             this.triggerWinEffect();
