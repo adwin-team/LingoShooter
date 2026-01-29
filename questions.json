@@ -68,5 +68,215 @@
     ],
     "answer": 1,
     "explanation": "値段を尋ねる問いへの返答。"
+  },
+  {
+    "id": "q_0006",
+    "level": 1,
+    "category": "daily",
+    "question": "Nice to meet you.",
+    "choices": [
+      "Nice to meet you, too.",
+      "Me too.",
+      "You're welcome.",
+      "I'm sorry."
+    ],
+    "answer": 0,
+    "explanation": "初対面の挨拶への返答。"
+  },
+  {
+    "id": "q_0007",
+    "level": 1,
+    "category": "daily",
+    "question": "What's your favorite food?",
+    "choices": [
+      "I like sushi.",
+      "I drink water.",
+      "It's 500 yen.",
+      "In the kitchen."
+    ],
+    "answer": 0,
+    "explanation": "好きな食べ物を尋ねる問い。"
+  },
+  {
+    "id": "q_0008",
+    "level": 2,
+    "category": "travel",
+    "question": "May I take a picture here?",
+    "choices": [
+      "Yes, you can.",
+      "I am a student.",
+      "It's a camera.",
+      "No, it isn't."
+    ],
+    "answer": 0,
+    "explanation": "許可を求める問いへの返答。"
+  },
+  {
+    "id": "q_0009",
+    "level": 2,
+    "category": "business",
+    "question": "What do you do for a living?",
+    "choices": [
+      "I'm a designer.",
+      "I'm living in Tokyo.",
+      "I'm fine.",
+      "I like sports."
+    ],
+    "answer": 0,
+    "explanation": "職業を尋ねる際の慣用表現。"
+  },
+  {
+    "id": "q_0010",
+    "level": 1,
+    "category": "daily",
+    "question": "Can I help you?",
+    "choices": [
+      "Yes, please.",
+      "No, you don't.",
+      "Thank you, I can.",
+      "I'm a doctor."
+    ],
+    "answer": 0,
+    "explanation": "手助けの申し出への返答。"
+  },
+  {
+    "id": "q_0011",
+    "level": 2,
+    "category": "travel",
+    "question": "Where can I check in?",
+    "choices": [
+      "At the front desk.",
+      "In the park.",
+      "Tomorrow morning.",
+      "By credit card."
+    ],
+    "answer": 0,
+    "explanation": "チェックイン場所を尋ねる問い。"
+  },
+  {
+    "id": "q_0012",
+    "level": 1,
+    "category": "daily",
+    "question": "Do you have any plans for the weekend?",
+    "choices": [
+      "I'm going to a movie.",
+      "I have two sisters.",
+      "I'm from Japan.",
+      "Yes, I did."
+    ],
+    "answer": 0,
+    "explanation": "週末の予定を尋ねる問い。"
+  },
+  {
+    "id": "q_0013",
+    "level": 2,
+    "category": "business",
+    "question": "I'm looking forward to working with you.",
+    "choices": [
+      "Me too.",
+      "I'm sorry.",
+      "Goodbye.",
+      "You are welcome."
+    ],
+    "answer": 0,
+    "explanation": "協力関係の開始時の挨拶。"
+  },
+  {
+    "id": "q_0014",
+    "level": 2,
+    "category": "travel",
+    "question": "A table for two, please.",
+    "choices": [
+      "Certainly. This way, please.",
+      "I have two tables.",
+      "It's 2 o'clock.",
+      "No, thank you."
+    ],
+    "answer": 0,
+    "explanation": "レストランでの席の注文への店員のリプライ。"
+  },
+  {
+    "id": "q_0015",
+    "level": 3,
+    "category": "grammar",
+    "question": "I wish I ________ a bird.",
+    "choices": [
+      "were",
+      "am",
+      "is",
+      "was"
+    ],
+    "answer": 0,
+    "explanation": "仮定法過去（現実とは異なる願望）。"
+  },
+  {
+    "id": "q_0016",
+    "level": 1,
+    "category": "daily",
+    "question": "How long does it take by bus?",
+    "choices": [
+      "About 20 minutes.",
+      "It's 2 miles.",
+      "The bus is blue.",
+      "Yes, it does."
+    ],
+    "answer": 0,
+    "explanation": "所要時間を尋ねる問い。"
+  },
+  {
+    "id": "q_0017",
+    "level": 2,
+    "category": "business",
+    "question": "Let's get down to business.",
+    "choices": [
+      "Okay, let's start.",
+      "I'm busy now.",
+      "No, thank you.",
+      "It's a big building."
+    ],
+    "answer": 0,
+    "explanation": "本題に入る際の慣用句。"
+  },
+  {
+    "id": "q_0018",
+    "level": 2,
+    "category": "travel",
+    "question": "Do you have this in a smaller size?",
+    "choices": [
+      "Let me check.",
+      "It's very small.",
+      "I like this size.",
+      "No, I don't have it."
+    ],
+    "answer": 0,
+    "explanation": "店でのサイズ確認。"
+  },
+  {
+    "id": "q_0019",
+    "level": 1,
+    "category": "daily",
+    "question": "What's the weather like?",
+    "choices": [
+      "It's raining.",
+      "I like summer.",
+      "It's 10 degrees.",
+      "No, it isn't."
+    ],
+    "answer": 0,
+    "explanation": "天気を尋ねる問い。"
+  },
+  {
+    "id": "q_0020",
+    "level": 3,
+    "category": "grammar",
+    "question": "She has been studying English ________ three years.",
+    "choices": [
+      "for",
+      "since",
+      "during",
+      "at"
+    ],
+    "answer": 0,
+    "explanation": "期間を表す前置詞（現在完了進行形）。"
   }
 ]
