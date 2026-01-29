@@ -77,6 +77,7 @@ class Game {
         this.startTime = 0;
         this.lastFrameTime = 0;
         this.difficulty = 1.0;
+        this.lastQuestionId = null;
 
         // DOM Elements
         this.hpBar = document.getElementById('hp-bar');
@@ -132,8 +133,15 @@ class Game {
     nextQuestion() {
         if (!this.gameActive || this.questions.length === 0) return;
 
-        const questionData = this.questions[Math.floor(Math.random() * this.questions.length)];
+        let availableQuestions = this.questions;
+        // 2問以上ある場合のみ、直近の問題を除外
+        if (this.questions.length > 1 && this.lastQuestionId) {
+            availableQuestions = this.questions.filter(q => q.id !== this.lastQuestionId);
+        }
+
+        const questionData = availableQuestions[Math.floor(Math.random() * availableQuestions.length)];
         this.currentQuestion = questionData;
+        this.lastQuestionId = questionData.id;
         this.questionText.textContent = questionData.question;
         this.enemyDistance = 0;
         this.startTime = performance.now();
