@@ -226,6 +226,7 @@ class Game {
         this.questionText = document.getElementById('question-text');
         this.choiceBtns = document.querySelectorAll('.choice-btn');
         this.enemy = document.getElementById('enemy');
+        this.enemy.classList.add('enemy-type-a'); // 初期タイプ
         this.reloadOverlay = document.getElementById('reload-overlay');
         this.reloadFill = document.getElementById('reload-fill');
         this.startScreen = document.getElementById('start-screen');
@@ -332,8 +333,14 @@ class Game {
             btn.disabled = false;
         });
 
-        // 敵の位置をリセット
+        // 敵の位置と種類をリセット
         this.enemy.style.transform = `scale(1) translateY(0)`;
+
+        // 敵タイプのランダム決定
+        this.enemy.className = 'enemy-sprite'; // クラスリセット
+        const enemyTypes = ['enemy-type-a', 'enemy-type-b', 'enemy-type-c'];
+        const randomType = enemyTypes[Math.floor(Math.random() * enemyTypes.length)];
+        this.enemy.classList.add(randomType);
     }
 
     handleAnswer(index) {
