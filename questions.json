@@ -278,5 +278,1125 @@
     ],
     "answer": 0,
     "explanation": "期間を表す前置詞（現在完了進行形）。"
+  },
+  {
+    "id": "q_0021",
+    "level": 1,
+    "category": "daily",
+    "question": "Where are you from?",
+    "choices": [
+      "I'm from Canada.",
+      "I'm 20 years old.",
+      "My name is Tom.",
+      "I like sushi."
+    ],
+    "answer": 0,
+    "explanation": "出身地を尋ねる問い。"
+  },
+  {
+    "id": "q_0022",
+    "level": 1,
+    "category": "daily",
+    "question": "See you later.",
+    "choices": [
+      "See you.",
+      "I'm fine.",
+      "Thank you.",
+      "Good morning."
+    ],
+    "answer": 0,
+    "explanation": "別れ際の挨拶。"
+  },
+  {
+    "id": "q_0023",
+    "level": 2,
+    "category": "travel",
+    "question": "Is there a convenience store near here?",
+    "choices": [
+      "Yes, there's one around the corner.",
+      "It opens at 9.",
+      "I don't have money.",
+      "No, thank you."
+    ],
+    "answer": 0,
+    "explanation": "場所の有無を尋ねる問い。"
+  },
+  {
+    "id": "q_0024",
+    "level": 2,
+    "category": "business",
+    "question": "I'm afraid I can't make it to the meeting.",
+    "choices": [
+      "That's too bad.",
+      "I am happy.",
+      "You are right.",
+      "See you tomorrow."
+    ],
+    "answer": 0,
+    "explanation": "欠席の連絡への返答。"
+  },
+  {
+    "id": "q_0025",
+    "level": 3,
+    "category": "grammar",
+    "question": "If it ________ tomorrow, we will cancel the picnic.",
+    "choices": [
+      "rains",
+      "rain",
+      "will rain",
+      "rained"
+    ],
+    "answer": 0,
+    "explanation": "時・条件を表す副詞節では未来のことでも現在形。"
+  },
+  {
+    "id": "q_0026",
+    "level": 1,
+    "category": "daily",
+    "question": "What's your hobby?",
+    "choices": [
+      "Listening to music.",
+      "I am tall.",
+      "It is a pen.",
+      "In the room."
+    ],
+    "answer": 0,
+    "explanation": "趣味を尋ねる問い。"
+  },
+  {
+    "id": "q_0027",
+    "level": 2,
+    "category": "travel",
+    "question": "Could you take a photo of us?",
+    "choices": [
+      "Sure, say cheese!",
+      "No, I am busy.",
+      "It is beautiful.",
+      "Thank you very much."
+    ],
+    "answer": 0,
+    "explanation": "写真撮影を依頼された時の返答。"
+  },
+  {
+    "id": "q_0028",
+    "level": 2,
+    "category": "business",
+    "question": "Here is my business card.",
+    "choices": [
+      "Thank you, here is mine.",
+      "I don't need it.",
+      "It is white.",
+      "Good bye."
+    ],
+    "answer": 0,
+    "explanation": "名刺交換時のマナー。"
+  },
+  {
+    "id": "q_0029",
+    "level": 1,
+    "category": "daily",
+    "question": "How old are you?",
+    "choices": [
+      "I'm twenty.",
+      "I'm fine.",
+      "It's new.",
+      "I have two."
+    ],
+    "answer": 0,
+    "explanation": "年齢を尋ねる問い。"
+  },
+  {
+    "id": "q_0030",
+    "level": 3,
+    "category": "grammar",
+    "question": "I look forward to ________ from you.",
+    "choices": [
+      "hearing",
+      "hear",
+      "heard",
+      "hears"
+    ],
+    "answer": 0,
+    "explanation": "look forward to + 動名詞(ing)。"
+  },
+  {
+    "id": "q_0031",
+    "level": 1,
+    "category": "daily",
+    "question": "Excute me.",
+    "choices": [
+      "Yes?",
+      "No.",
+      "Good.",
+      "Bad."
+    ],
+    "answer": 0,
+    "explanation": "呼びかけへの応答。"
+  },
+  {
+    "id": "q_0032",
+    "level": 2,
+    "category": "travel",
+    "question": "I'd like to check out.",
+    "choices": [
+      "May I have your room key, please?",
+      "Please sit down.",
+      "It is 10 o'clock.",
+      "Good night."
+    ],
+    "answer": 0,
+    "explanation": "ホテルのチェックアウト時の会話。"
+  },
+  {
+    "id": "q_0033",
+    "level": 3,
+    "category": "business",
+    "question": "We need to cut costs.",
+    "choices": [
+      "I agree.",
+      "It is expensive.",
+      "I like cutting.",
+      "No problem."
+    ],
+    "answer": 0,
+    "explanation": "コスト削減の提案への同意。"
+  },
+  {
+    "id": "q_0034",
+    "level": 2,
+    "category": "daily",
+    "question": "Mind if I sit here?",
+    "choices": [
+      "Not at all.",
+      "Yes, please.",
+      "I do.",
+      "Maybe."
+    ],
+    "answer": 0,
+    "explanation": "許可を求める際の返答（Mind if... に対して Not at all で「どうぞ」）。"
+  },
+  {
+    "id": "q_0035",
+    "level": 3,
+    "category": "grammar",
+    "question": "This is the house ________ I was born.",
+    "choices": [
+      "where",
+      "which",
+      "that",
+      "who"
+    ],
+    "answer": 0,
+    "explanation": "関係副詞 where。"
+  },
+  {
+    "id": "q_0036",
+    "level": 1,
+    "category": "daily",
+    "question": "Thank you.",
+    "choices": [
+      "You're welcome.",
+      "Me too.",
+      "No.",
+      "Yes."
+    ],
+    "answer": 0,
+    "explanation": "感謝への返答。"
+  },
+  {
+    "id": "q_0037",
+    "level": 2,
+    "category": "travel",
+    "question": "Which platform is for Tokyo?",
+    "choices": [
+      "Platform 3.",
+      "It is a train.",
+      "I don't go.",
+      "At 5 o'clock."
+    ],
+    "answer": 0,
+    "explanation": "電車のホームを尋ねる問い。"
+  },
+  {
+    "id": "q_0038",
+    "level": 2,
+    "category": "business",
+    "question": "Who is in charge of this project?",
+    "choices": [
+      "Mr. Tanaka is.",
+      "I am Project.",
+      "It is big.",
+      "Tomorrow."
+    ],
+    "answer": 0,
+    "explanation": "担当者を尋ねる問い。"
+  },
+  {
+    "id": "q_0039",
+    "level": 1,
+    "category": "daily",
+    "question": "Do you like coffee?",
+    "choices": [
+      "Yes, I do.",
+      "Yes, I am.",
+      "No, I'm not.",
+      "I like tea."
+    ],
+    "answer": 0,
+    "explanation": "好みを尋ねる問い。"
+  },
+  {
+    "id": "q_0040",
+    "level": 3,
+    "category": "grammar",
+    "question": "He is ________ honest man.",
+    "choices": [
+      "an",
+      "a",
+      "the",
+      "some"
+    ],
+    "answer": 0,
+    "explanation": "母音で始まる音の前には an。"
+  },
+  {
+    "id": "q_0041",
+    "level": 1,
+    "category": "daily",
+    "question": "What day is it today?",
+    "choices": [
+      "It's Monday.",
+      "It's sunny.",
+      "It's 10th.",
+      "It's 3 o'clock."
+    ],
+    "answer": 0,
+    "explanation": "曜日を尋ねる問い。"
+  },
+  {
+    "id": "q_0042",
+    "level": 2,
+    "category": "travel",
+    "question": "Do you accept credit cards?",
+    "choices": [
+      "Yes, we do.",
+      "No, I don't.",
+      "It is plastic.",
+      "Thank you."
+    ],
+    "answer": 0,
+    "explanation": "支払い方法の確認。"
+  },
+  {
+    "id": "q_0043",
+    "level": 3,
+    "category": "business",
+    "question": "Please keep me informed.",
+    "choices": [
+      "I will.",
+      "I see.",
+      "Okay, bye.",
+      "You know."
+    ],
+    "answer": 0,
+    "explanation": "報告を継続するように頼む表現。"
+  },
+  {
+    "id": "q_0044",
+    "level": 2,
+    "category": "daily",
+    "question": "It's getting late.",
+    "choices": [
+      "I should go now.",
+      "It is early.",
+      "Good morning.",
+      "Hello."
+    ],
+    "answer": 0,
+    "explanation": "会話を切り上げる際の合図。"
+  },
+  {
+    "id": "q_0045",
+    "level": 3,
+    "category": "grammar",
+    "question": "By the time he arrives, we ________ dinner.",
+    "choices": [
+      "will have finished",
+      "finished",
+      "finish",
+      "are finishing"
+    ],
+    "answer": 0,
+    "explanation": "未来完了形。"
+  },
+  {
+    "id": "q_0046",
+    "level": 1,
+    "category": "daily",
+    "question": "What's wrong?",
+    "choices": [
+      "I lost my wallet.",
+      "I am happy.",
+      "It is right.",
+      "No problem."
+    ],
+    "answer": 0,
+    "explanation": "相手の様子が変な時に尋ねる表現。"
+  },
+  {
+    "id": "q_0047",
+    "level": 2,
+    "category": "travel",
+    "question": "I have a reservation.",
+    "choices": [
+      "Your name, please?",
+      "Really?",
+      "Good job.",
+      "Come in."
+    ],
+    "answer": 0,
+    "explanation": "予約を伝える際のやり取り。"
+  },
+  {
+    "id": "q_0048",
+    "level": 3,
+    "category": "business",
+    "question": "We have to meet the deadline.",
+    "choices": [
+      "I'll do my best.",
+      "I don't care.",
+      "It is dead.",
+      "Lines are long."
+    ],
+    "answer": 0,
+    "explanation": "締め切りを守る必要性。"
+  },
+  {
+    "id": "q_0049",
+    "level": 1,
+    "category": "daily",
+    "question": "Good night.",
+    "choices": [
+      "Sweet dreams.",
+      "Good morning.",
+      "Hello.",
+      "See you."
+    ],
+    "answer": 0,
+    "explanation": "就寝前の挨拶。"
+  },
+  {
+    "id": "q_0050",
+    "level": 3,
+    "category": "grammar",
+    "question": "He stopped ________.",
+    "choices": [
+      "smoking",
+      "to smoking",
+      "smoke",
+      "smoked"
+    ],
+    "answer": 0,
+    "explanation": "stop + -ing（〜するのをやめる）。"
+  },
+  {
+    "id": "q_0051",
+    "level": 1,
+    "category": "daily",
+    "question": "Are you busy?",
+    "choices": [
+      "A little.",
+      "Yes, I do.",
+      "No, I am not.",
+      "I am fine."
+    ],
+    "answer": 0,
+    "explanation": "忙しいか尋ねる問い。"
+  },
+  {
+    "id": "q_0052",
+    "level": 2,
+    "category": "travel",
+    "question": "Does this bus go to the airport?",
+    "choices": [
+      "No, you need the next one.",
+      "Yes, it is.",
+      "I like buses.",
+      "Airport is far."
+    ],
+    "answer": 0,
+    "explanation": "バスの行き先確認。"
+  },
+  {
+    "id": "q_0053",
+    "level": 3,
+    "category": "business",
+    "question": "Regarding the agenda...",
+    "choices": [
+      "Let's discuss it.",
+      "I forgot.",
+      "It is paper.",
+      "No way."
+    ],
+    "answer": 0,
+    "explanation": "議題についての切り出し。"
+  },
+  {
+    "id": "q_0054",
+    "level": 2,
+    "category": "daily",
+    "question": "That sounds great!",
+    "choices": [
+      "I know, right?",
+      "It is sound.",
+      "No.",
+      "Bad."
+    ],
+    "answer": 0,
+    "explanation": "提案や報告へのポジティブな反応。"
+  },
+  {
+    "id": "q_0055",
+    "level": 3,
+    "category": "grammar",
+    "question": "I ________ my homework yet.",
+    "choices": [
+      "haven't finished",
+      "didn't finish",
+      "don't finish",
+      "not finish"
+    ],
+    "answer": 0,
+    "explanation": "現在完了形（完了・結果）。not ... yet。"
+  },
+  {
+    "id": "q_0056",
+    "level": 1,
+    "category": "daily",
+    "question": "Who is that?",
+    "choices": [
+      "That's my brother.",
+      "I am Tom.",
+      "It is a dog.",
+      "He is tall."
+    ],
+    "answer": 0,
+    "explanation": "人物を尋ねる問い。"
+  },
+  {
+    "id": "q_0057",
+    "level": 2,
+    "category": "travel",
+    "question": "Can I have a map?",
+    "choices": [
+      "Here you are.",
+      "No map.",
+      "It is paper.",
+      "Go straight."
+    ],
+    "answer": 0,
+    "explanation": "地図を頼む表現。"
+  },
+  {
+    "id": "q_0058",
+    "level": 3,
+    "category": "business",
+    "question": "What is the budget?",
+    "choices": [
+      "It's 1 million yen.",
+      "I have money.",
+      "No budget.",
+      "It is cheap."
+    ],
+    "answer": 0,
+    "explanation": "予算を尋ねる問い。"
+  },
+  {
+    "id": "q_0059",
+    "level": 1,
+    "category": "daily",
+    "question": "Where do you live?",
+    "choices": [
+      "I live in Osaka.",
+      "I am from Osaka.",
+      "Osaka is big.",
+      "I like Osaka."
+    ],
+    "answer": 0,
+    "explanation": "居住地を尋ねる問い。"
+  },
+  {
+    "id": "q_0060",
+    "level": 3,
+    "category": "grammar",
+    "question": "The book ________ by him.",
+    "choices": [
+      "was written",
+      "wrote",
+      "writes",
+      "writing"
+    ],
+    "answer": 0,
+    "explanation": "受動態。"
+  },
+  {
+    "id": "q_0061",
+    "level": 1,
+    "category": "daily",
+    "question": "Do you need a bag?",
+    "choices": [
+      "No, thank you.",
+      "Yes, I am.",
+      "It is a bag.",
+      "I have money."
+    ],
+    "answer": 0,
+    "explanation": "レジでのやり取り。"
+  },
+  {
+    "id": "q_0062",
+    "level": 2,
+    "category": "travel",
+    "question": "Is breakfast included?",
+    "choices": [
+      "Yes, it is.",
+      "I like bread.",
+      "Morning.",
+      "No thank you."
+    ],
+    "answer": 0,
+    "explanation": "朝食付きかどうかの確認。"
+  },
+  {
+    "id": "q_0063",
+    "level": 3,
+    "category": "business",
+    "question": "Any other questions?",
+    "choices": [
+      "None so far.",
+      "I have question.",
+      "It is clear.",
+      "Yes."
+    ],
+    "answer": 0,
+    "explanation": "質疑応答の締めくくり。"
+  },
+  {
+    "id": "q_0064",
+    "level": 2,
+    "category": "daily",
+    "question": "Congratulations!",
+    "choices": [
+      "Thank you.",
+      "You too.",
+      "Happy.",
+      "Good."
+    ],
+    "answer": 0,
+    "explanation": "お祝いへの返答。"
+  },
+  {
+    "id": "q_0065",
+    "level": 3,
+    "category": "grammar",
+    "question": "He runs ________ than me.",
+    "choices": [
+      "faster",
+      "fast",
+      "fastest",
+      "more fast"
+    ],
+    "answer": 0,
+    "explanation": "比較級。"
+  },
+  {
+    "id": "q_0066",
+    "level": 1,
+    "category": "daily",
+    "question": "What's this?",
+    "choices": [
+      "It's a pen.",
+      "Is it a pen?",
+      "Yes, it is.",
+      "No, it isn't."
+    ],
+    "answer": 0,
+    "explanation": "物の名前を尋ねる問い。"
+  },
+  {
+    "id": "q_0067",
+    "level": 2,
+    "category": "travel",
+    "question": "My luggage is missing.",
+    "choices": [
+      "Let's check the counter.",
+      "It is heavy.",
+      "I have a bag.",
+      "Goodbye."
+    ],
+    "answer": 0,
+    "explanation": "荷物紛失時のトラブル対応。"
+  },
+  {
+    "id": "q_0068",
+    "level": 3,
+    "category": "business",
+    "question": "Let's wrap up.",
+    "choices": [
+      "Okay, good meeting.",
+      "I am wrapping.",
+      "Paper.",
+      "Scissors."
+    ],
+    "answer": 0,
+    "explanation": "会議を終わらせる合図。"
+  },
+  {
+    "id": "q_0069",
+    "level": 1,
+    "category": "daily",
+    "question": "It's hot today.",
+    "choices": [
+      "Yes, it is.",
+      "No I am not.",
+      "I like winter.",
+      "Cold."
+    ],
+    "answer": 0,
+    "explanation": "気候についての会話。"
+  },
+  {
+    "id": "q_0070",
+    "level": 3,
+    "category": "grammar",
+    "question": "I ________ go to the dentist.",
+    "choices": [
+      "must",
+      "can",
+      "may",
+      "will"
+    ],
+    "answer": 0,
+    "explanation": "義務を表す助動詞。"
+  },
+  {
+    "id": "q_0071",
+    "level": 1,
+    "category": "daily",
+    "question": "Are you hungry?",
+    "choices": [
+      "Yes, I'm starving.",
+      "No, I am thirsty.",
+      "I like food.",
+      "Eat."
+    ],
+    "answer": 0,
+    "explanation": "空腹かどうか尋ねる問い。"
+  },
+  {
+    "id": "q_0072",
+    "level": 2,
+    "category": "travel",
+    "question": "Can I try this on?",
+    "choices": [
+      "Sure, the fitting room is there.",
+      "No.",
+      "It fits.",
+      "Buy it."
+    ],
+    "answer": 0,
+    "explanation": "試着の許可を求める問い。"
+  },
+  {
+    "id": "q_0073",
+    "level": 3,
+    "category": "business",
+    "question": "I'll double check.",
+    "choices": [
+      "Please do.",
+      "Two checks.",
+      "Okay.",
+      "Thanks."
+    ],
+    "answer": 0,
+    "explanation": "再確認の申し出。"
+  },
+  {
+    "id": "q_0074",
+    "level": 2,
+    "category": "daily",
+    "question": "Take care.",
+    "choices": [
+      "You too.",
+      "I will.",
+      "Care.",
+      "Taking."
+    ],
+    "answer": 0,
+    "explanation": "別れ際の気遣い。"
+  },
+  {
+    "id": "q_0075",
+    "level": 3,
+    "category": "grammar",
+    "question": "Do you know ________ he lives?",
+    "choices": [
+      "where",
+      "what",
+      "which",
+      "who"
+    ],
+    "answer": 0,
+    "explanation": "間接疑問文。"
+  },
+  {
+    "id": "q_0076",
+    "level": 1,
+    "category": "daily",
+    "question": "Happy Birthday!",
+    "choices": [
+      "Thank you.",
+      "Happy.",
+      "Birthday.",
+      "You too."
+    ],
+    "answer": 0,
+    "explanation": "誕生日のお祝い。"
+  },
+  {
+    "id": "q_0077",
+    "level": 2,
+    "category": "travel",
+    "question": "Keep the change.",
+    "choices": [
+      "Thank you, sir.",
+      "No.",
+      "Change.",
+      "Coins."
+    ],
+    "answer": 0,
+    "explanation": "チップを渡す時の表現。"
+  },
+  {
+    "id": "q_0078",
+    "level": 3,
+    "category": "business",
+    "question": "It's a deal.",
+    "choices": [
+      "Great!",
+      "No deal.",
+      "Deal.",
+      "Okay."
+    ],
+    "answer": 0,
+    "explanation": "取引成立。"
+  },
+  {
+    "id": "q_0079",
+    "level": 1,
+    "category": "daily",
+    "question": "I don't understand.",
+    "choices": [
+      "Let me explain.",
+      "I understand.",
+      "No.",
+      "Yes."
+    ],
+    "answer": 0,
+    "explanation": "理解できないことを伝える。"
+  },
+  {
+    "id": "q_0080",
+    "level": 3,
+    "category": "grammar",
+    "question": "This is the most interesting movie I have ________ seen.",
+    "choices": [
+      "ever",
+      "never",
+      "yet",
+      "just"
+    ],
+    "answer": 0,
+    "explanation": "最上級 + 現在完了。"
+  },
+  {
+    "id": "q_0081",
+    "level": 1,
+    "category": "daily",
+    "question": "What's up?",
+    "choices": [
+      "Not much.",
+      "Up.",
+      "Down.",
+      "Sky."
+    ],
+    "answer": 0,
+    "explanation": "カジュアルな挨拶。"
+  },
+  {
+    "id": "q_0082",
+    "level": 2,
+    "category": "travel",
+    "question": "Table for four?",
+    "choices": [
+      "Right this way.",
+      "No four.",
+      "Five.",
+      "Yes."
+    ],
+    "answer": 0,
+    "explanation": "レストランの入店時。"
+  },
+  {
+    "id": "q_0083",
+    "level": 3,
+    "category": "business",
+    "question": "ASAP means...",
+    "choices": [
+      "As Soon As Possible.",
+      "As Simple As Possible.",
+      "As Slow As Possible.",
+      "As Smart As Possible."
+    ],
+    "answer": 0,
+    "explanation": "略語の知識。"
+  },
+  {
+    "id": "q_0084",
+    "level": 2,
+    "category": "daily",
+    "question": "Don't worry.",
+    "choices": [
+      "Thanks.",
+      "I worry.",
+      "No.",
+      "Yes."
+    ],
+    "answer": 0,
+    "explanation": "励ましの言葉。"
+  },
+  {
+    "id": "q_0085",
+    "level": 3,
+    "category": "grammar",
+    "question": "Make yourself ________ home.",
+    "choices": [
+      "at",
+      "in",
+      "on",
+      "to"
+    ],
+    "answer": 0,
+    "explanation": "慣用句 (Make yourself at home)。"
+  },
+  {
+    "id": "q_0086",
+    "level": 1,
+    "category": "daily",
+    "question": "Are you okay?",
+    "choices": [
+      "I'm fine.",
+      "No okay.",
+      "Yes okay.",
+      "Fine."
+    ],
+    "answer": 0,
+    "explanation": "体調や様子を気遣う問い。"
+  },
+  {
+    "id": "q_0087",
+    "level": 2,
+    "category": "travel",
+    "question": "I'm lost.",
+    "choices": [
+      "Where do you want to go?",
+      "Go home.",
+      "Lost.",
+      "Found."
+    ],
+    "answer": 0,
+    "explanation": "道に迷った時。"
+  },
+  {
+    "id": "q_0088",
+    "level": 3,
+    "category": "business",
+    "question": "Ballpark figure.",
+    "choices": [
+      "Rough estimate.",
+      "Exact number.",
+      "Ball.",
+      "Park."
+    ],
+    "answer": 0,
+    "explanation": "概算という意味のイディオム。"
+  },
+  {
+    "id": "q_0089",
+    "level": 1,
+    "category": "daily",
+    "question": "Good luck.",
+    "choices": [
+      "Thanks.",
+      "Luck.",
+      "Bad.",
+      "Good."
+    ],
+    "answer": 0,
+    "explanation": "幸運を祈る言葉。"
+  },
+  {
+    "id": "q_0090",
+    "level": 3,
+    "category": "grammar",
+    "question": "No sooner had I arrived ________ it started to rain.",
+    "choices": [
+      "than",
+      "when",
+      "before",
+      "after"
+    ],
+    "answer": 0,
+    "explanation": "接続詞の構文。"
+  },
+  {
+    "id": "q_0091",
+    "level": 1,
+    "category": "daily",
+    "question": "Cheers!",
+    "choices": [
+      "Cheers!",
+      "Wine.",
+      "Beer.",
+      "Drink."
+    ],
+    "answer": 0,
+    "explanation": "乾杯の挨拶。"
+  },
+  {
+    "id": "q_0092",
+    "level": 2,
+    "category": "travel",
+    "question": "One way ticket, please.",
+    "choices": [
+      "Here is your ticket.",
+      "Two way.",
+      "No way.",
+      "Ticket."
+    ],
+    "answer": 0,
+    "explanation": "切符の購入。"
+  },
+  {
+    "id": "q_0093",
+    "level": 3,
+    "category": "business",
+    "question": "Touch base.",
+    "choices": [
+      "Make contact.",
+      "Play baseball.",
+      "Touch.",
+      "Base."
+    ],
+    "answer": 0,
+    "explanation": "連絡を取り合うという意味のイディオム。"
+  },
+  {
+    "id": "q_0094",
+    "level": 2,
+    "category": "daily",
+    "question": "Long time no see.",
+    "choices": [
+      "How have you been?",
+      "I see.",
+      "Long time.",
+      "Short time."
+    ],
+    "answer": 0,
+    "explanation": "久しぶりの再会。"
+  },
+  {
+    "id": "q_0095",
+    "level": 3,
+    "category": "grammar",
+    "question": "It goes without ________ that health is wealth.",
+    "choices": [
+      "saying",
+      "said",
+      "say",
+      "sales"
+    ],
+    "answer": 0,
+    "explanation": "It goes without saying that... (〜は言うまでもない)。"
+  },
+  {
+    "id": "q_0096",
+    "level": 1,
+    "category": "daily",
+    "question": "Ready?",
+    "choices": [
+      "Yes, I'm ready.",
+      "No ready.",
+      "Go.",
+      "Start."
+    ],
+    "answer": 0,
+    "explanation": "準備ができたか確認。"
+  },
+  {
+    "id": "q_0097",
+    "level": 2,
+    "category": "travel",
+    "question": "Water, please.",
+    "choices": [
+      "Still or sparkling?",
+      "Water.",
+      "Yes.",
+      "No."
+    ],
+    "answer": 0,
+    "explanation": "水を注文する際の返し。"
+  },
+  {
+    "id": "q_0098",
+    "level": 3,
+    "category": "business",
+    "question": "Win-win situation.",
+    "choices": [
+      "Good for both sides.",
+      "Lose-lose.",
+      "Win.",
+      "Lose."
+    ],
+    "answer": 0,
+    "explanation": "双方が利益を得る状況。"
+  },
+  {
+    "id": "q_0099",
+    "level": 2,
+    "category": "daily",
+    "question": "How come?",
+    "choices": [
+      "Why?",
+      "When?",
+      "Does it come?",
+      "Back?"
+    ],
+    "answer": 0,
+    "explanation": "「どうして？」と尋ねる口語。"
+  },
+  {
+    "id": "q_0100",
+    "level": 3,
+    "category": "grammar",
+    "question": "I would rather stay home ________ go out.",
+    "choices": [
+      "than",
+      "to",
+      "or",
+      "but"
+    ],
+    "answer": 0,
+    "explanation": "would rather A than B."
   }
 ]
