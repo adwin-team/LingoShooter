@@ -132,20 +132,26 @@ class AudioManager {
         this.playTone(600, 'square', 0.05, 0.1, 0.3);
     }
 
-    startBGM() {
+    async startBGM() {
+        // コンテキストがサスペンド状態なら再開（念のため）
+        if (this.ctx.state === 'suspended') {
+            await this.ctx.resume();
+        }
+
         // 簡易的なループBGM
         if (this.bgmTimer) return;
 
         const noteLength = 0.2;
+        // PCスピーカーでも聞こえやすいようにユニゾン/オクターブ調整
         const sequence = [
-            { f: 110, t: 'triangle' }, // A2
-            { f: 110, t: 'triangle' },
-            { f: 130, t: 'triangle' }, // C3
+            { f: 220, t: 'triangle' }, // A3 (以前はA2=110Hzだったのでオクターブ上げ)
+            { f: 220, t: 'triangle' },
+            { f: 261, t: 'triangle' }, // C4
             { f: 0, t: null },
-            { f: 164, t: 'triangle' }, // E3
-            { f: 110, t: 'triangle' },
-            { f: 196, t: 'triangle' }, // G3
-            { f: 164, t: 'triangle' },
+            { f: 329, t: 'triangle' }, // E4
+            { f: 220, t: 'triangle' },
+            { f: 392, t: 'triangle' }, // G4
+            { f: 329, t: 'triangle' },
         ];
 
         let step = 0;
@@ -153,10 +159,13 @@ class AudioManager {
             if (this.isMuted) return;
             const note = sequence[step % sequence.length];
             if (note.t) {
-                this.playTone(note.f, note.t, noteLength, 0, 0.2);
+                // 音量を 0.2 -> 0.4 にアップ
+                this.playTone(note.f, note.t, noteLength, 0, 0.4);
             }
             step++;
         }, noteLength * 1000);
+
+        console.log("BGM Started");
     }
 
     stopBGM() {
