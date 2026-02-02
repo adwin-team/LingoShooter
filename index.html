@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="game-container">
         <!-- プレイヤーステータス -->
@@ -23,6 +27,7 @@
                 <span class="label">SCORE</span>
                 <span id="score">000000</span>
             </div>
+            <button id="sound-btn">SOUND: ON</button>
         </header>
 
         <!-- メインバトルフィールド -->
@@ -33,7 +38,7 @@
                     <div class="enemy-glow"></div>
                 </div>
             </div>
-            
+
             <div id="player-container">
                 <div id="player" class="player-sprite"></div>
             </div>
@@ -55,7 +60,9 @@
             </div>
             <div id="reload-overlay" class="hidden">
                 <span class="reload-text">RELOADING...</span>
-                <div class="reload-bar"><div id="reload-fill"></div></div>
+                <div class="reload-bar">
+                    <div id="reload-fill"></div>
+                </div>
             </div>
         </section>
 
@@ -79,4 +86,5 @@
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -35,6 +35,138 @@ class HistoryManager {
     }
 }
 
+class AudioManager {
+    constructor() {
+        this.ctx = new (window.AudioContext || window.webkitAudioContext)();
+        this.isMuted = false;
+        this.bgmOscillators = [];
+        this.masterGain = this.ctx.createGain();
+        this.masterGain.connect(this.ctx.destination);
+        this.masterGain.gain.value = 0.3; // 全体の音量
+    }
+
+    async init() {
+        if (this.ctx.state === 'suspended') {
+            await this.ctx.resume();
+        }
+    }
+
+    toggleMute() {
+        this.isMuted = !this.isMuted;
+        if (this.isMuted) {
+            this.masterGain.gain.setTargetAtTime(0, this.ctx.currentTime, 0.1);
+        } else {
+            this.masterGain.gain.setTargetAtTime(0.3, this.ctx.currentTime, 0.1);
+        }
+        return this.isMuted;
+    }
+
+    playTone(freq, type, duration, startTime = 0, vol = 1.0) {
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+
+        osc.type = type;
+        osc.frequency.setValueAtTime(freq, this.ctx.currentTime + startTime);
+
+        gain.gain.setValueAtTime(vol, this.ctx.currentTime + startTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + startTime + duration);
+
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+
+        osc.start(this.ctx.currentTime + startTime);
+        osc.stop(this.ctx.currentTime + startTime + duration);
+
+        return osc;
+    }
+
+    playShoot() {
+        if (this.isMuted) return;
+        // ピュンという音
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.frequency.setValueAtTime(800, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(100, this.ctx.currentTime + 0.2);
+        gain.gain.setValueAtTime(0.5, this.ctx.currentTime);
+        gain.gain.linearRampToValueAtTime(0, this.ctx.currentTime + 0.2);
+
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.2);
+    }
+
+    playExplosion() {
+        if (this.isMuted) return;
+        // ノイズ生成は少し複雑なので、簡易的に低周波の荒い音で代用
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(100, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(10, this.ctx.currentTime + 0.3);
+
+        gain.gain.setValueAtTime(1, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.3);
+
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.3);
+    }
+
+    playCorrect() {
+        if (this.isMuted) return;
+        this.playTone(880, 'sine', 0.1, 0, 0.5); // A5
+        this.playTone(1108, 'sine', 0.3, 0.1, 0.5); // C#6
+    }
+
+    playWrong() {
+        if (this.isMuted) return;
+        this.playTone(150, 'sawtooth', 0.3, 0, 0.5);
+        this.playTone(130, 'sawtooth', 0.3, 0.1, 0.5);
+    }
+
+    playReload() {
+        if (this.isMuted) return;
+        this.playTone(600, 'square', 0.05, 0, 0.3);
+        this.playTone(600, 'square', 0.05, 0.1, 0.3);
+    }
+
+    startBGM() {
+        // 簡易的なループBGM
+        if (this.bgmTimer) return;
+
+        const noteLength = 0.2;
+        const sequence = [
+            { f: 110, t: 'triangle' }, // A2
+            { f: 110, t: 'triangle' },
+            { f: 130, t: 'triangle' }, // C3
+            { f: 0, t: null },
+            { f: 164, t: 'triangle' }, // E3
+            { f: 110, t: 'triangle' },
+            { f: 196, t: 'triangle' }, // G3
+            { f: 164, t: 'triangle' },
+        ];
+
+        let step = 0;
+        this.bgmTimer = setInterval(() => {
+            if (this.isMuted) return;
+            const note = sequence[step % sequence.length];
+            if (note.t) {
+                this.playTone(note.f, note.t, noteLength, 0, 0.2);
+            }
+            step++;
+        }, noteLength * 1000);
+    }
+
+    stopBGM() {
+        if (this.bgmTimer) {
+            clearInterval(this.bgmTimer);
+            this.bgmTimer = null;
+        }
+    }
+}
+
 const DEFAULT_QUESTIONS = [
     {
         "id": "q_0001",
@@ -91,12 +223,25 @@ class Game {
         this.gameOverScreen = document.getElementById('game-over');
         this.finalScoreText = document.getElementById('final-score');
 
+        this.audio = new AudioManager(); // Audio Manager
+
         this.initEventListeners();
     }
 
     initEventListeners() {
         document.getElementById('start-btn').addEventListener('click', () => this.start());
         document.getElementById('retry-btn').addEventListener('click', () => this.start());
+
+        // Sound Toggle
+        const soundBtn = document.getElementById('sound-btn');
+        if (soundBtn) {
+            soundBtn.addEventListener('click', () => {
+                const isMuted = this.audio.toggleMute();
+                soundBtn.textContent = isMuted ? 'SOUND: OFF' : 'SOUND: ON';
+                soundBtn.classList.toggle('muted', isMuted);
+            });
+        }
+
         this.choiceBtns.forEach(btn => {
             btn.addEventListener('click', (e) => this.handleAnswer(parseInt(e.target.dataset.index)));
         });
@@ -113,11 +258,16 @@ class Game {
         }
     }
 
-    start() {
+    async start() {
         if (this.questions.length === 0) {
             this.questionText.textContent = "Error: No missions available.";
             return;
         }
+
+        // Audio init must be triggered by user interaction
+        await this.audio.init();
+        this.audio.startBGM();
+
         this.hp = 100;
         this.score = 0;
         this.difficulty = 1.0;
@@ -192,12 +342,14 @@ class Game {
         });
 
         if (isCorrect) {
+            this.audio.playShoot();
             this.choiceBtns[index].classList.add('correct');
             this.score += Math.max(10, Math.floor(100 - this.enemyDistance));
             this.difficulty += 0.05;
             this.triggerWinEffect();
             setTimeout(() => this.nextQuestion(), 500);
         } else {
+            this.audio.playWrong();
             this.triggerReload();
             this.takeDamage(10);
             this.choiceBtns[index].classList.add('wrong');
@@ -208,12 +360,15 @@ class Game {
 
     triggerWinEffect() {
         // 敵が吹き飛ぶアニメーションなど
+        this.audio.playExplosion();
+        this.audio.playCorrect();
         this.enemy.classList.add('shoot-up');
         setTimeout(() => this.enemy.classList.remove('shoot-up'), 500);
     }
 
     triggerReload() {
         this.isReloading = true;
+        this.audio.playReload();
         this.reloadOverlay.classList.remove('hidden');
         let progress = 0;
         const reloadTime = 2000; // 2秒
@@ -273,6 +428,7 @@ class Game {
 
         // 一定距離以上で継続ダメージ
         if (this.enemyDistance > 100) {
+            this.audio.playWrong(); // ダメージ音（簡易）
             this.takeDamage(1); // 衝突ダメージ
             this.enemyDistance = 80; // 少し押し戻す
         }
@@ -282,6 +438,7 @@ class Game {
 
     endGame() {
         this.gameActive = false;
+        this.audio.stopBGM();
         this.finalScoreText.textContent = this.score;
         this.gameOverScreen.classList.remove('hidden');
     }
