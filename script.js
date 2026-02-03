@@ -35,6 +35,43 @@ class HistoryManager {
     }
 }
 
+class TTSManager {
+    constructor() {
+        this.synth = window.speechSynthesis;
+        this.voice = null;
+        this.initVoice();
+
+        // 音声リストが非同期で読み込まれるブラウザ対策
+        if (speechSynthesis.onvoiceschanged !== undefined) {
+            speechSynthesis.onvoiceschanged = () => this.initVoice();
+        }
+    }
+
+    initVoice() {
+        const voices = this.synth.getVoices();
+        // 英語音声を優先 (Google US English, Samantha, etc.)
+        this.voice = voices.find(v => v.lang === 'en-US' && v.name.includes('Google'))
+            || voices.find(v => v.lang === 'en-US')
+            || voices.find(v => v.lang.startsWith('en'))
+            || null;
+    }
+
+    speak(text) {
+        if (!this.synth || !this.voice) return;
+
+        // 既存の発話をキャンセル
+        this.synth.cancel();
+
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.voice = this.voice;
+        utterance.lang = 'en-US';
+        utterance.rate = 1.0; // 読み上げ速度
+        utterance.pitch = 1.0;
+
+        this.synth.speak(utterance);
+    }
+}
+
 class AudioManager {
     constructor() {
         this.ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -271,6 +308,7 @@ class Game {
         this.finalScoreText = document.getElementById('final-score');
 
         this.audio = new AudioManager(); // Audio Manager
+        this.tts = new TTSManager(); // TTS Manager
 
         this.initEventListeners();
     }
@@ -379,10 +417,16 @@ class Game {
         const enemyTypes = ['enemy-type-a', 'enemy-type-b', 'enemy-type-c'];
         const randomType = enemyTypes[Math.floor(Math.random() * enemyTypes.length)];
         this.enemy.classList.add(randomType);
+
+        // 問題文読み上げ
+        this.tts.speak(questionData.question);
     }
 
     handleAnswer(index) {
         if (this.isReloading || !this.gameActive) return;
+
+        // 回答読み上げ
+        this.tts.speak(this.shuffledChoices[index].text);
 
         const isCorrect = (index === this.currentCorrectIndex);
         const timeTaken = (performance.now() - this.startTime) / 1000;
