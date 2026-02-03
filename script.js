@@ -57,18 +57,29 @@ class TTSManager {
     }
 
     speak(text) {
-        if (!this.synth || !this.voice) return;
+        return new Promise((resolve) => {
+            if (!this.synth || !this.voice) {
+                resolve();
+                return;
+            }
 
-        // 既存の発話をキャンセル
-        this.synth.cancel();
+            // 既存の発話をキャンセル
+            this.synth.cancel();
 
-        const utterance = new SpeechSynthesisUtterance(text);
-        utterance.voice = this.voice;
-        utterance.lang = 'en-US';
-        utterance.rate = 1.0; // 読み上げ速度
-        utterance.pitch = 1.0;
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.voice = this.voice;
+            utterance.lang = 'en-US';
+            utterance.rate = 1.0; // 読み上げ速度
+            utterance.pitch = 1.0;
 
-        this.synth.speak(utterance);
+            utterance.onend = () => resolve();
+            utterance.onerror = (e) => {
+                console.error("TTS Error:", e);
+                resolve();
+            };
+
+            this.synth.speak(utterance);
+        });
     }
 }
 
@@ -422,11 +433,11 @@ class Game {
         this.tts.speak(questionData.question);
     }
 
-    handleAnswer(index) {
+    async handleAnswer(index) {
         if (this.isReloading || !this.gameActive) return;
 
-        // 回答読み上げ
-        this.tts.speak(this.shuffledChoices[index].text);
+        // 回答読み上げ（非同期で開始）
+        const speakPromise = this.tts.speak(this.shuffledChoices[index].text);
 
         const isCorrect = (index === this.currentCorrectIndex);
         const timeTaken = (performance.now() - this.startTime) / 1000;
@@ -445,7 +456,13 @@ class Game {
             this.score += Math.max(10, Math.floor(100 - this.enemyDistance));
             this.difficulty += 0.05;
             this.triggerWinEffect();
-            setTimeout(() => this.nextQuestion(), 500);
+
+            // 読み上げ完了を待機してから次へ
+            await speakPromise;
+            // 演出との兼ね合いで少し待つ（必要なら）
+            await new Promise(r => setTimeout(r, 200));
+
+            this.nextQuestion();
         } else {
             this.audio.playWrong();
             this.triggerReload();
