@@ -266,7 +266,9 @@ const DEFAULT_QUESTIONS = [
         "level": 1,
         "category": "daily",
         "question": "How are you today?",
+        "question_jp": "今日の調子はどうですか？",
         "choices": ["I'm fine, thank you.", "Yes, I am.", "I go to school.", "At seven o'clock."],
+        "choices_jp": ["元気です、ありがとう。", "はい、そうです。", "私は学校に行きます。", "7時です。"],
         "answer": 0,
         "explanation": "挨拶への自然な返答。"
     },
@@ -275,7 +277,9 @@ const DEFAULT_QUESTIONS = [
         "level": 1,
         "category": "daily",
         "question": "What time is it now?",
+        "question_jp": "今、何時ですか？",
         "choices": ["It's sunny.", "It's ten o'clock.", "I'm hungry.", "Yes, please."],
+        "choices_jp": ["晴れています。", "10時です。", "お腹が空きました。", "はい、お願いします。"],
         "answer": 1,
         "explanation": "時間を尋ねる問いへの返答。"
     },
@@ -284,7 +288,9 @@ const DEFAULT_QUESTIONS = [
         "level": 1,
         "category": "daily",
         "question": "Where is the nearest station?",
+        "question_jp": "最寄りの駅はどこですか？",
         "choices": ["I like trains.", "Go straight and turn left.", "Yesterday morning.", "By bus."],
+        "choices_jp": ["私は電車が好きです。", "まっすぐ行って左に曲がってください。", "昨日の朝です。", "バスで。"],
         "answer": 1,
         "explanation": "場所を尋ねる問いへの道案内。"
     }
@@ -309,6 +315,7 @@ class Game {
         this.hpBar = document.getElementById('hp-bar');
         this.scoreText = document.getElementById('score');
         this.questionText = document.getElementById('question-text');
+        this.questionJp = document.getElementById('question-jp');
         this.choiceBtns = document.querySelectorAll('.choice-btn');
         this.enemy = document.getElementById('enemy');
         this.enemy.classList.add('enemy-type-a'); // 初期タイプ
@@ -339,7 +346,7 @@ class Game {
         }
 
         this.choiceBtns.forEach(btn => {
-            btn.addEventListener('click', (e) => this.handleAnswer(parseInt(e.target.dataset.index)));
+            btn.addEventListener('click', (e) => this.handleAnswer(parseInt(e.currentTarget.dataset.index)));
         });
     }
 
@@ -400,12 +407,20 @@ class Game {
         }
 
         this.questionText.textContent = questionData.question;
+        this.questionJp.textContent = questionData.question_jp || "";
+        this.questionJp.classList.remove('visible');
+        this.questionJp.classList.remove('hidden');
+
         this.enemyDistance = 0;
         this.startTime = performance.now();
         this.lastAttackTime = performance.now(); // 攻撃タイマーリセット
 
         // 選択肢に元のインデックスを紐付けてからシャッフル
-        const choices = questionData.choices.map((text, index) => ({ text, originalIndex: index }));
+        const choices = questionData.choices.map((text, index) => ({
+            text,
+            text_jp: questionData.choices_jp ? questionData.choices_jp[index] : "",
+            originalIndex: index
+        }));
         for (let i = choices.length - 1; i > 0; i--) {
             const j = Math.floor(Math.random() * (i + 1));
             [choices[i], choices[j]] = [choices[j], choices[i]];
@@ -415,7 +430,13 @@ class Game {
         this.currentCorrectIndex = choices.findIndex(c => c.originalIndex === questionData.answer);
 
         this.choiceBtns.forEach((btn, i) => {
-            btn.textContent = choices[i].text || "";
+            // HTML構造を作成して日本語訳を埋め込む
+            btn.innerHTML = `
+                <div class="choice-content">
+                    <span class="choice-original">${choices[i].text}</span>
+                    <span class="choice-jp">${choices[i].text_jp}</span>
+                </div>
+            `;
             btn.classList.remove('correct', 'wrong');
             btn.disabled = false;
         });
@@ -453,6 +474,11 @@ class Game {
         if (isCorrect) {
             this.audio.playShoot();
             this.choiceBtns[index].classList.add('correct');
+
+            // 日本語訳を表示
+            this.questionJp.classList.add('visible');
+            document.querySelectorAll('.choice-jp').forEach(el => el.classList.add('visible'));
+
             this.score += Math.max(10, Math.floor(100 - this.enemyDistance));
             this.difficulty += 0.05;
             this.triggerWinEffect();
@@ -460,7 +486,7 @@ class Game {
             // 読み上げ完了を待機してから次へ
             await speakPromise;
             // 演出との兼ね合いで少し待つ（必要なら）
-            await new Promise(r => setTimeout(r, 200));
+            await new Promise(r => setTimeout(r, 1000));
 
             this.nextQuestion();
         } else {
