@@ -478,7 +478,6 @@ class Game {
         this.audio.playExplosion();
         this.audio.playCorrect();
         this.enemy.classList.add('shoot-up');
-        setTimeout(() => this.enemy.classList.remove('shoot-up'), 500);
     }
 
     triggerReload() {
