@@ -303,6 +303,7 @@ class Game {
         this.questions = [];
         this.currentQuestion = null;
         this.isReloading = false;
+        this.isEnemyDefeated = false; // 敵撃破状態フラグ
         this.enemyDistance = 0; // 0が最遠、100が衝突
         this.gameActive = false;
         this.startTime = 0;
@@ -410,6 +411,7 @@ class Game {
     }
 
     nextQuestion() {
+        this.isEnemyDefeated = false; // 撃破フラグリセット
         if (!this.gameActive || this.questions.length === 0) return;
 
         // 除外する履歴の長さを決定（問題数の半分、最小1）
@@ -481,7 +483,7 @@ class Game {
     }
 
     async handleAnswer(index) {
-        if (this.isReloading || !this.gameActive) return;
+        if (this.isReloading || !this.gameActive || this.isEnemyDefeated) return;
 
         // 回答読み上げ（非同期で開始）
         const speakPromise = this.tts.speak(this.shuffledChoices[index].text);
@@ -498,6 +500,7 @@ class Game {
         });
 
         if (isCorrect) {
+            this.isEnemyDefeated = true; // 撃破フラグON
             this.audio.playShoot();
             this.choiceBtns[index].classList.add('correct');
 
@@ -554,7 +557,7 @@ class Game {
     }
 
     triggerEnemyAttack() {
-        if (!this.gameActive) return;
+        if (!this.gameActive || this.isEnemyDefeated) return;
 
         // ビーム音
         this.audio.playBeam();
@@ -618,6 +621,12 @@ class Game {
 
         const deltaTime = currentTime - this.lastFrameTime;
         this.lastFrameTime = currentTime;
+
+        // 敵が撃破されている場合は移動も攻撃もしない
+        if (this.isEnemyDefeated) {
+            requestAnimationFrame((t) => this.gameLoop(t));
+            return;
+        }
 
         // 敵の接近スピード (難易度に応じて上昇)
         const approachSpeed = 0.005 * this.difficulty * deltaTime;
