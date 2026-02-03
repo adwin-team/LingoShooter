@@ -132,6 +132,42 @@ class AudioManager {
         this.playTone(600, 'square', 0.05, 0.1, 0.3);
     }
 
+    playBeam() {
+        if (this.isMuted) return;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(1200, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(100, this.ctx.currentTime + 0.3);
+
+        gain.gain.setValueAtTime(0.5, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.3);
+
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.3);
+    }
+
+    playBeam() {
+        if (this.isMuted) return;
+        const osc = this.ctx.createOscillator();
+        const gain = this.ctx.createGain();
+
+        osc.type = 'sawtooth';
+        osc.frequency.setValueAtTime(1200, this.ctx.currentTime);
+        osc.frequency.exponentialRampToValueAtTime(100, this.ctx.currentTime + 0.3);
+
+        gain.gain.setValueAtTime(0.5, this.ctx.currentTime);
+        gain.gain.exponentialRampToValueAtTime(0.01, this.ctx.currentTime + 0.3);
+
+        osc.connect(gain);
+        gain.connect(this.masterGain);
+        osc.start();
+        osc.stop(this.ctx.currentTime + 0.3);
+    }
+
     async startBGM() {
         // コンテキストがサスペンド状態なら再開（念のため）
         if (this.ctx.state === 'suspended') {
@@ -217,6 +253,7 @@ class Game {
         this.gameActive = false;
         this.startTime = 0;
         this.lastFrameTime = 0;
+        this.lastAttackTime = 0;
         this.difficulty = 1.0;
         this.questionHistory = []; // 出題済みの問題ID履歴
 
@@ -316,6 +353,7 @@ class Game {
         this.questionText.textContent = questionData.question;
         this.enemyDistance = 0;
         this.startTime = performance.now();
+        this.lastAttackTime = performance.now(); // 攻撃タイマーリセット
 
         // 選択肢に元のインデックスを紐付けてからシャッフル
         const choices = questionData.choices.map((text, index) => ({ text, originalIndex: index }));
@@ -403,6 +441,42 @@ class Game {
         }, step);
     }
 
+    triggerEnemyAttack() {
+        if (!this.gameActive) return;
+
+        // ビーム音
+        this.audio.playBeam();
+
+        // 敵の位置（発射位置）を計算
+        const enemyRect = this.enemy.getBoundingClientRect();
+        const fieldRect = document.getElementById('battle-field').getBoundingClientRect();
+
+        // ビーム要素生成
+        const beam = document.createElement('div');
+        beam.classList.add('enemy-beam', 'beam-fire');
+
+        // ビームの位置と長さを設定
+        // top: 敵の中心 or 下端
+        const startTop = enemyRect.bottom - fieldRect.top - 20;
+        const endBottom = fieldRect.height - 50; // プレイヤー付近
+        const height = endBottom - startTop;
+
+        beam.style.top = `${startTop}px`;
+        beam.style.height = `${height}px`;
+
+        document.getElementById('battle-field').appendChild(beam);
+
+        // クリーンアップ
+        setTimeout(() => {
+            if (beam.parentNode) beam.parentNode.removeChild(beam);
+        }, 400);
+
+        // ダメージ
+        this.takeDamage(15);
+
+        this.lastAttackTime = performance.now();
+    }
+
     takeDamage(amount) {
         this.hp -= amount;
         document.getElementById('game-container').classList.add('shake');
@@ -435,19 +509,23 @@ class Game {
 
         // 敵の接近スピード (難易度に応じて上昇)
         const approachSpeed = 0.005 * this.difficulty * deltaTime;
-        this.enemyDistance += approachSpeed;
+
+        // 距離制限（攻撃範囲に入ったら停止）
+        const stopDistance = 75;
+
+        if (this.enemyDistance < stopDistance) {
+            this.enemyDistance += approachSpeed;
+        } else {
+            // 停止中は攻撃ルーチン
+            if (currentTime - this.lastAttackTime > (2000 / this.difficulty)) { // 難易度が上がると攻撃頻度アップ
+                this.triggerEnemyAttack();
+            }
+        }
 
         // 視覚的表現 (スケールアップ)
         const scale = 1 + (this.enemyDistance / 100) * 3;
         const translateY = (this.enemyDistance / 100) * 200;
         this.enemy.style.transform = `scale(${scale}) translateY(${translateY}px)`;
-
-        // 一定距離以上で継続ダメージ
-        if (this.enemyDistance > 100) {
-            this.audio.playWrong(); // ダメージ音（簡易）
-            this.takeDamage(1); // 衝突ダメージ
-            this.enemyDistance = 80; // 少し押し戻す
-        }
 
         requestAnimationFrame((t) => this.gameLoop(t));
     }
