@@ -1,0 +1,1052 @@
+[
+    {
+        "id": "q_0001",
+        "level": 1,
+        "category": "daily",
+        "question": "How are you today?",
+        "question_jp": "今日の調子はどうですか？",
+        "choices": [
+            "I'm fine, thank you.",
+            "Yes, I am.",
+            "I go to school.",
+            "At seven o'clock."
+        ],
+        "choices_jp": [
+            "元気です、ありがとう。",
+            "はい、そうです。",
+            "私は学校に行きます。",
+            "7時です。"
+        ],
+        "answer": 0,
+        "explanation": "挨拶への自然な返答。"
+    },
+    {
+        "id": "q_0002",
+        "level": 1,
+        "category": "daily",
+        "question": "What time is it now?",
+        "question_jp": "今、何時ですか？",
+        "choices": [
+            "It's sunny.",
+            "It's ten o'clock.",
+            "I'm hungry.",
+            "Yes, please."
+        ],
+        "choices_jp": [
+            "晴れています。",
+            "10時です。",
+            "お腹が空きました。",
+            "はい、お願いします。"
+        ],
+        "answer": 1,
+        "explanation": "時間を尋ねる問いへの返答。"
+    },
+    {
+        "id": "q_0003",
+        "level": 1,
+        "category": "daily",
+        "question": "Where is the nearest station?",
+        "question_jp": "最寄りの駅はどこですか？",
+        "choices": [
+            "I like trains.",
+            "Go straight and turn left.",
+            "Yesterday morning.",
+            "By bus."
+        ],
+        "choices_jp": [
+            "私は電車が好きです。",
+            "まっすぐ行って左に曲がってください。",
+            "昨日の朝です。",
+            "バスで。"
+        ],
+        "answer": 1,
+        "explanation": "場所を尋ねる問いへの道案内。"
+    },
+    {
+        "id": "q_0004",
+        "level": 2,
+        "category": "daily",
+        "question": "Could you please repeat that?",
+        "question_jp": "もう一度言っていただけますか？",
+        "choices": [
+            "No, I can't.",
+            "Sure, I'll say it again.",
+            "I don't know.",
+            "You're welcome."
+        ],
+        "choices_jp": [
+            "いいえ、できません。",
+            "もちろんです、もう一度言います。",
+            "わかりません。",
+            "どういたしまして。"
+        ],
+        "answer": 1,
+        "explanation": "聞き返しに対する丁寧な承諾。"
+    },
+    {
+        "id": "q_0005",
+        "level": 2,
+        "category": "daily",
+        "question": "How much is this for?",
+        "question_jp": "これはいくらですか？",
+        "choices": [
+            "It's very beautiful.",
+            "It costs 10 dollars.",
+            "I bought it yesterday.",
+            "No, thank you."
+        ],
+        "choices_jp": [
+            "とても美しいです。",
+            "10ドルです。",
+            "昨日買いました。",
+            "いいえ、結構です。"
+        ],
+        "answer": 1,
+        "explanation": "値段を尋ねる問いへの返答。"
+    },
+    {
+        "id": "q_0006",
+        "level": 1,
+        "category": "daily",
+        "question": "Nice to meet you.",
+        "question_jp": "はじめまして。",
+        "choices": [
+            "Nice to meet you, too.",
+            "Me too.",
+            "You're welcome.",
+            "I'm sorry."
+        ],
+        "choices_jp": [
+            "こちらこそ、はじめまして。",
+            "私も。",
+            "どういたしまして。",
+            "ごめんなさい。"
+        ],
+        "answer": 0,
+        "explanation": "初対面の挨拶への返答。"
+    },
+    {
+        "id": "q_0007",
+        "level": 1,
+        "category": "daily",
+        "question": "What's your favorite food?",
+        "question_jp": "好きな食べ物は何ですか？",
+        "choices": [
+            "I like sushi.",
+            "I drink water.",
+            "It's 500 yen.",
+            "In the kitchen."
+        ],
+        "choices_jp": [
+            "お寿司が好きです。",
+            "水を飲みます。",
+            "500円です。",
+            "キッチンにあります。"
+        ],
+        "answer": 0,
+        "explanation": "好きな食べ物を尋ねる問い。"
+    },
+    {
+        "id": "q_0008",
+        "level": 2,
+        "category": "daily",
+        "question": "May I take a picture here?",
+        "question_jp": "ここで写真を撮ってもいいですか？",
+        "choices": [
+            "Yes, you can.",
+            "I am a student.",
+            "It's a camera.",
+            "No, it isn't."
+        ],
+        "choices_jp": [
+            "はい、いいですよ。",
+            "私は学生です。",
+            "それはカメラです。",
+            "いいえ、違います。"
+        ],
+        "answer": 0,
+        "explanation": "許可を求める問いへの返答。"
+    },
+    {
+        "id": "q_0009",
+        "level": 2,
+        "category": "daily",
+        "question": "What do you do for a living?",
+        "question_jp": "お仕事は何をされていますか？",
+        "choices": [
+            "I'm a designer.",
+            "I'm living in Tokyo.",
+            "I'm fine.",
+            "I like sports."
+        ],
+        "choices_jp": [
+            "デザイナーをしています。",
+            "東京に住んでいます。",
+            "元気です。",
+            "スポーツが好きです。"
+        ],
+        "answer": 0,
+        "explanation": "職業を尋ねる際の慣用表現。"
+    },
+    {
+        "id": "q_0010",
+        "level": 1,
+        "category": "daily",
+        "question": "Can I help you?",
+        "question_jp": "お手伝いしましょうか？",
+        "choices": [
+            "Yes, please.",
+            "No, you don't.",
+            "Thank you, I can.",
+            "I'm a doctor."
+        ],
+        "choices_jp": [
+            "はい、お願いします。",
+            "いいえ、しません。",
+            "ありがとう、自分でできます。",
+            "私は医者です。"
+        ],
+        "answer": 0,
+        "explanation": "手助けの申し出への返答。"
+    },
+    {
+        "id": "q_0011",
+        "level": 2,
+        "category": "daily",
+        "question": "Have you seen my keys?",
+        "question_jp": "私の鍵を見かけませんでしたか？",
+        "choices": [
+            "No, I haven't.",
+            "Yes, it is mine.",
+            "Keys are metal.",
+            "I lock the door."
+        ],
+        "choices_jp": [
+            "いいえ、見ていません。",
+            "はい、それは私のものです。",
+            "鍵は金属です。",
+            "ドアに鍵をかけます。"
+        ],
+        "answer": 0,
+        "explanation": "探し物についての質問。"
+    },
+    {
+        "id": "q_0012",
+        "level": 1,
+        "category": "daily",
+        "question": "Do you have any plans for the weekend?",
+        "question_jp": "週末は何か予定がありますか？",
+        "choices": [
+            "I'm going to a movie.",
+            "I have two sisters.",
+            "I'm from Japan.",
+            "Yes, I did."
+        ],
+        "choices_jp": [
+            "映画を見に行くつもりです。",
+            "姉妹が二人います。",
+            "日本出身です。",
+            "はい、しました。"
+        ],
+        "answer": 0,
+        "explanation": "週末の予定を尋ねる問い。"
+    },
+    {
+        "id": "q_0013",
+        "level": 2,
+        "category": "daily",
+        "question": "What kind of movies do you like?",
+        "question_jp": "どんな映画が好きですか？",
+        "choices": [
+            "I like action movies.",
+            "I am watching TV.",
+            "Movie is long.",
+            "Popcorn is good."
+        ],
+        "choices_jp": [
+            "アクション映画が好きです。",
+            "テレビを見ています。",
+            "映画は長いです。",
+            "ポップコーンはおいしいです。"
+        ],
+        "answer": 0,
+        "explanation": "好みのジャンルを尋ねる問い。"
+    },
+    {
+        "id": "q_0014",
+        "level": 2,
+        "category": "daily",
+        "question": "Do you exercise regularly?",
+        "question_jp": "定期的に運動しますか？",
+        "choices": [
+            "Yes, I go jogging.",
+            "Exercise is hard.",
+            "I like math.",
+            "No, thank you."
+        ],
+        "choices_jp": [
+            "はい、ジョギングをします。",
+            "運動は大変です。",
+            "数学が好きです。",
+            "いいえ、結構です。"
+        ],
+        "answer": 0,
+        "explanation": "習慣について尋ねる問い。"
+    },
+    {
+        "id": "q_0015",
+        "level": 1,
+        "category": "daily",
+        "question": "Who is your best friend?",
+        "question_jp": "親友は誰ですか？",
+        "choices": [
+            "Mike is my best friend.",
+            "Friend is nice.",
+            "I am friendly.",
+            "He is a teacher."
+        ],
+        "choices_jp": [
+            "マイクが親友です。",
+            "友達はいいよね。",
+            "私はフレンドリーです。",
+            "彼は先生です。"
+        ],
+        "answer": 0,
+        "explanation": "人間関係についての問い。"
+    },
+    {
+        "id": "q_0016",
+        "level": 1,
+        "category": "daily",
+        "question": "How long does it take by bus?",
+        "question_jp": "バスでどれくらい時間がかかりますか？",
+        "choices": [
+            "About 20 minutes.",
+            "It's 2 miles.",
+            "The bus is blue.",
+            "Yes, it does."
+        ],
+        "choices_jp": [
+            "約20分です。",
+            "2マイルです。",
+            "バスは青いです。",
+            "はい、します。"
+        ],
+        "answer": 0,
+        "explanation": "所要時間を尋ねる問い。"
+    },
+    {
+        "id": "q_0017",
+        "level": 2,
+        "category": "daily",
+        "question": "It's getting cold, isn't it?",
+        "question_jp": "寒くなってきましたね？",
+        "choices": [
+            "Yes, winter is coming.",
+            "No, it is hot.",
+            "Cold is blue.",
+            "I like summer."
+        ],
+        "choices_jp": [
+            "はい、冬が近づいています。",
+            "いいえ、暑いです。",
+            "寒さは青いです。",
+            "夏が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "天気についての世間話。"
+    },
+    {
+        "id": "q_0018",
+        "level": 2,
+        "category": "daily",
+        "question": "Do you have this in a smaller size?",
+        "question_jp": "これの小さいサイズはありますか？",
+        "choices": [
+            "Let me check.",
+            "It's very small.",
+            "I like this size.",
+            "No, I don't have it."
+        ],
+        "choices_jp": [
+            "確認させてください。",
+            "とても小さいです。",
+            "このサイズが好きです。",
+            "いいえ、持っていません。"
+        ],
+        "answer": 0,
+        "explanation": "店でのサイズ確認。"
+    },
+    {
+        "id": "q_0019",
+        "level": 1,
+        "category": "daily",
+        "question": "What's the weather like?",
+        "question_jp": "天気はどうですか？",
+        "choices": [
+            "It's raining.",
+            "I like summer.",
+            "It's 10 degrees.",
+            "No, it isn't."
+        ],
+        "choices_jp": [
+            "雨が降っています。",
+            "夏が好きです。",
+            "10度です。",
+            "いいえ、違います。"
+        ],
+        "answer": 0,
+        "explanation": "天気を尋ねる問い。"
+    },
+    {
+        "id": "q_0020",
+        "level": 2,
+        "category": "daily",
+        "question": "Can you recommend a good restaurant?",
+        "question_jp": "いいレストランを勧めてくれませんか？",
+        "choices": [
+            "Sure, there's a great Italian place nearby.",
+            "I am hungry.",
+            "Restaurant is open.",
+            "I like cooking."
+        ],
+        "choices_jp": [
+            "もちろん、近くに美味しいイタリアンがありますよ。",
+            "お腹が空きました。",
+            "レストランは開いています。",
+            "料理が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "おすすめを尋ねる問い。"
+    },
+    {
+        "id": "q_0021",
+        "level": 1,
+        "category": "daily",
+        "question": "Where are you from?",
+        "question_jp": "出身はどこですか？",
+        "choices": [
+            "I'm from Canada.",
+            "I'm 20 years old.",
+            "My name is Tom.",
+            "I like sushi."
+        ],
+        "choices_jp": [
+            "カナダ出身です。",
+            "20歳です。",
+            "私の名前はトムです。",
+            "寿司が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "出身地を尋ねる問い。"
+    },
+    {
+        "id": "q_0022",
+        "level": 1,
+        "category": "daily",
+        "question": "See you later.",
+        "question_jp": "また後で。",
+        "choices": [
+            "See you.",
+            "I'm fine.",
+            "Thank you.",
+            "Good morning."
+        ],
+        "choices_jp": [
+            "またね。",
+            "元気です。",
+            "ありがとう。",
+            "おはよう。"
+        ],
+        "answer": 0,
+        "explanation": "別れ際の挨拶。"
+    },
+    {
+        "id": "q_0023",
+        "level": 2,
+        "category": "daily",
+        "question": "Is there a convenience store near here?",
+        "question_jp": "この近くにコンビニはありますか？",
+        "choices": [
+            "Yes, there's one around the corner.",
+            "It opens at 9.",
+            "I don't have money.",
+            "No, thank you."
+        ],
+        "choices_jp": [
+            "はい、角を曲がったところにあります。",
+            "9時に開きます。",
+            "お金を持っていません。",
+            "いいえ、結構です。"
+        ],
+        "answer": 0,
+        "explanation": "場所の有無を尋ねる問い。"
+    },
+    {
+        "id": "q_0024",
+        "level": 2,
+        "category": "daily",
+        "question": "What time does the store close?",
+        "question_jp": "その店は何時に閉まりますか？",
+        "choices": [
+            "At 9 PM.",
+            "It is closed.",
+            "Store is big.",
+            "I buy milk."
+        ],
+        "choices_jp": [
+            "午後9時です。",
+            "閉まっています。",
+            "店は大きいです。",
+            "牛乳を買います。"
+        ],
+        "answer": 0,
+        "explanation": "閉店時間を尋ねる問い。"
+    },
+    {
+        "id": "q_0025",
+        "level": 1,
+        "category": "daily",
+        "question": "How do you go to school?",
+        "question_jp": "どうやって学校に行きますか？",
+        "choices": [
+            "By bus.",
+            "I like school.",
+            "It is far.",
+            "My school is new."
+        ],
+        "choices_jp": [
+            "バスで。",
+            "学校が好きです。",
+            "それは遠いです。",
+            "私の学校は新しいです。"
+        ],
+        "answer": 0,
+        "explanation": "通学手段を尋ねる問い。"
+    },
+    {
+        "id": "q_0026",
+        "level": 1,
+        "category": "daily",
+        "question": "What's your hobby?",
+        "question_jp": "趣味は何ですか？",
+        "choices": [
+            "Listening to music.",
+            "I am tall.",
+            "It is a pen.",
+            "In the room."
+        ],
+        "choices_jp": [
+            "音楽を聴くことです。",
+            "私は背が高いです。",
+            "それはペンです。",
+            "部屋の中にいます。"
+        ],
+        "answer": 0,
+        "explanation": "趣味を尋ねる問い。"
+    },
+    {
+        "id": "q_0027",
+        "level": 2,
+        "category": "daily",
+        "question": "Could you take a photo of us?",
+        "question_jp": "私たちの写真を撮ってもらえますか？",
+        "choices": [
+            "Sure, say cheese!",
+            "No, I am busy.",
+            "It is beautiful.",
+            "Thank you very much."
+        ],
+        "choices_jp": [
+            "もちろんです、はいポーズ！",
+            "いいえ、忙しいです。",
+            "美しいです。",
+            "本当にありがとう。"
+        ],
+        "answer": 0,
+        "explanation": "写真撮影を依頼された時の返答。"
+    },
+    {
+        "id": "q_0028",
+        "level": 2,
+        "category": "daily",
+        "question": "Do you smoke?",
+        "question_jp": "タバコは吸いますか？",
+        "choices": [
+            "No, I don't.",
+            "Yes, please.",
+            "Smoke is bad.",
+            "I like fire."
+        ],
+        "choices_jp": [
+            "いいえ、吸いません。",
+            "はい、お願いします。",
+            "煙は悪いです。",
+            "火が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "習慣についての問い。"
+    },
+    {
+        "id": "q_0029",
+        "level": 1,
+        "category": "daily",
+        "question": "How old are you?",
+        "question_jp": "あなたは何歳ですか？",
+        "choices": [
+            "I'm twenty.",
+            "I'm fine.",
+            "It's new.",
+            "I have two."
+        ],
+        "choices_jp": [
+            "20歳です。",
+            "元気です。",
+            "それは新しいです。",
+            "2つ持っています。"
+        ],
+        "answer": 0,
+        "explanation": "年齢を尋ねる問い。"
+    },
+    {
+        "id": "q_0030",
+        "level": 1,
+        "category": "daily",
+        "question": "Where is the library?",
+        "question_jp": "図書館はどこですか？",
+        "choices": [
+            "It's next to the park.",
+            "I read books.",
+            "Library is quiet.",
+            "I have a card."
+        ],
+        "choices_jp": [
+            "公園の隣です。",
+            "本を読みます。",
+            "図書館は静かです。",
+            "カードを持っています。"
+        ],
+        "answer": 0,
+        "explanation": "場所を尋ねる問い。"
+    },
+    {
+        "id": "q_0031",
+        "level": 1,
+        "category": "daily",
+        "question": "Excuse me.",
+        "question_jp": "すみません。",
+        "choices": [
+            "Yes?",
+            "No.",
+            "Good.",
+            "Bad."
+        ],
+        "choices_jp": [
+            "はい？",
+            "いいえ。",
+            "良い。",
+            "悪い。"
+        ],
+        "answer": 0,
+        "explanation": "呼びかけへの応答。"
+    },
+    {
+        "id": "q_0032",
+        "level": 2,
+        "category": "daily",
+        "question": "I'd like to return this.",
+        "question_jp": "これを返品したいのですが。",
+        "choices": [
+            "Do you have the receipt?",
+            "No refund.",
+            "It is broken.",
+            "Good bye."
+        ],
+        "choices_jp": [
+            "レシートはお持ちですか？",
+            "返金不可です。",
+            "壊れています。",
+            "さようなら。"
+        ],
+        "answer": 0,
+        "explanation": "返品時のやり取り。"
+    },
+    {
+        "id": "q_0033",
+        "level": 1,
+        "category": "daily",
+        "question": "What's this?",
+        "question_jp": "これは何ですか？",
+        "choices": [
+            "It's a gift.",
+            "It is this.",
+            "I don't know.",
+            "Yes, it is."
+        ],
+        "choices_jp": [
+            "贈り物です。",
+            "これです。",
+            "知りません。",
+            "はい、そうです。"
+        ],
+        "answer": 0,
+        "explanation": "物を尋ねる問い。"
+    },
+    {
+        "id": "q_0034",
+        "level": 2,
+        "category": "daily",
+        "question": "Mind if I sit here?",
+        "question_jp": "ここに座ってもいいですか？",
+        "choices": [
+            "Not at all.",
+            "Yes, please.",
+            "I do.",
+            "Maybe."
+        ],
+        "choices_jp": [
+            "ええ、どうぞ（気にしません）。",
+            "はい、お願いします。",
+            "気にします。",
+            "多分。"
+        ],
+        "answer": 0,
+        "explanation": "許可を求める際の返答（Mind if... に対して Not at all で「どうぞ」）。"
+    },
+    {
+        "id": "q_0035",
+        "level": 2,
+        "category": "daily",
+        "question": "You look tired.",
+        "question_jp": "疲れているみたいですね。",
+        "choices": [
+            "I worked late last night.",
+            "I am happy.",
+            "You look good.",
+            "Tired is sleeping."
+        ],
+        "choices_jp": [
+            "昨夜遅くまで働いたんです。",
+            "私は幸せです。",
+            "元気そうですね。",
+            "疲れは眠っています。"
+        ],
+        "answer": 0,
+        "explanation": "相手の体調を気遣う問い。"
+    },
+    {
+        "id": "q_0036",
+        "level": 1,
+        "category": "daily",
+        "question": "Thank you.",
+        "question_jp": "ありがとう。",
+        "choices": [
+            "You're welcome.",
+            "Me too.",
+            "No.",
+            "Yes."
+        ],
+        "choices_jp": [
+            "どういたしまして。",
+            "私も。",
+            "いいえ。",
+            "はい。"
+        ],
+        "answer": 0,
+        "explanation": "感謝への返答。"
+    },
+    {
+        "id": "q_0037",
+        "level": 2,
+        "category": "daily",
+        "question": "Are you free fast?",
+        "question_jp": "急いでいますか？",
+        "choices": [
+            "Not really.",
+            "Yes, I do.",
+            "I am expensive.",
+            "Fast is run."
+        ],
+        "choices_jp": [
+            "それほどでも。",
+            "はい、そうです。",
+            "私は高いです。",
+            "速いとは走ること。"
+        ],
+        "answer": 0,
+        "explanation": "状況を尋ねる問い。"
+    },
+    {
+        "id": "q_0038",
+        "level": 2,
+        "category": "daily",
+        "question": "How was your day?",
+        "question_jp": "今日はどうだった？",
+        "choices": [
+            "It was good.",
+            "It is today.",
+            "Day is bright.",
+            "I like night."
+        ],
+        "choices_jp": [
+            "良かったです。",
+            "今日です。",
+            "昼は明るいです。",
+            "夜が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "一日の終わりの挨拶。"
+    },
+    {
+        "id": "q_0039",
+        "level": 1,
+        "category": "daily",
+        "question": "Do you like coffee?",
+        "question_jp": "コーヒーは好きですか？",
+        "choices": [
+            "Yes, I do.",
+            "Yes, I am.",
+            "No, I'm not.",
+            "I like tea."
+        ],
+        "choices_jp": [
+            "はい、好きです。",
+            "はい、そうです。",
+            "いいえ、違います。",
+            "紅茶が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "好みの確認。"
+    },
+    {
+        "id": "q_0040",
+        "level": 1,
+        "category": "daily",
+        "question": "Are you married?",
+        "question_jp": "結婚していますか？",
+        "choices": [
+            "No, I'm single.",
+            "I like weddings.",
+            "She is my wife.",
+            "Yes, I do."
+        ],
+        "choices_jp": [
+            "いいえ、独身です。",
+            "結婚式が好きです。",
+            "彼女は妻です。",
+            "はい、します。"
+        ],
+        "answer": 0,
+        "explanation": "ステータスを尋ねる問い。"
+    },
+    {
+        "id": "q_0041",
+        "level": 1,
+        "category": "daily",
+        "question": "What day is it today?",
+        "question_jp": "今日は何曜日ですか？",
+        "choices": [
+            "It's Monday.",
+            "It's sunny.",
+            "It's 10th.",
+            "It's 3 o'clock."
+        ],
+        "choices_jp": [
+            "月曜日です。",
+            "晴れています。",
+            "10日です。",
+            "3時です。"
+        ],
+        "answer": 0,
+        "explanation": "曜日を尋ねる問い。"
+    },
+    {
+        "id": "q_0042",
+        "level": 2,
+        "category": "daily",
+        "question": "Can I borrow your umbrella?",
+        "question_jp": "傘を借りてもいいですか？",
+        "choices": [
+            "Sure, take it.",
+            "It is raining.",
+            "Umbrella is wet.",
+            "No, buy one."
+        ],
+        "choices_jp": [
+            "もちろん、どうぞ。",
+            "雨が降っています。",
+            "傘は濡れています。",
+            "いいえ、買ってください。"
+        ],
+        "answer": 0,
+        "explanation": "貸し借りの依頼。"
+    },
+    {
+        "id": "q_0043",
+        "level": 2,
+        "category": "daily",
+        "question": "Don't mention it.",
+        "question_jp": "どういたしまして（気にしないで）。",
+        "choices": [
+            "You're kind.",
+            "I mention.",
+            "It is mentioned.",
+            "Thank you."
+        ],
+        "choices_jp": [
+            "優しいですね。",
+            "言及します。",
+            "言及されました。",
+            "ありがとう。"
+        ],
+        "answer": 0,
+        "explanation": "感謝に対する返答。"
+    },
+    {
+        "id": "q_0044",
+        "level": 2,
+        "category": "daily",
+        "question": "It's getting late.",
+        "question_jp": "遅くなってきましたね。",
+        "choices": [
+            "I should go now.",
+            "It is early.",
+            "Good morning.",
+            "Hello."
+        ],
+        "choices_jp": [
+            "もう行かなくちゃ。",
+            "早いです。",
+            "おはよう。",
+            "こんにちは。"
+        ],
+        "answer": 0,
+        "explanation": "会話を切り上げる際の合図。"
+    },
+    {
+        "id": "q_0045",
+        "level": 1,
+        "category": "daily",
+        "question": "Can you speak Japanese?",
+        "question_jp": "日本語を話せますか？",
+        "choices": [
+            "A little bit.",
+            "Japan is nice.",
+            "I am Japanese.",
+            "Speak up."
+        ],
+        "choices_jp": [
+            "少しだけ。",
+            "日本はいいところです。",
+            "私は日本人です。",
+            "もっと大きな声で。"
+        ],
+        "answer": 0,
+        "explanation": "言語能力を尋ねる問い。"
+    },
+    {
+        "id": "q_0046",
+        "level": 1,
+        "category": "daily",
+        "question": "What's wrong?",
+        "question_jp": "どうしたの？",
+        "choices": [
+            "I lost my wallet.",
+            "I am happy.",
+            "It is right.",
+            "No problem."
+        ],
+        "choices_jp": [
+            "財布を失くしました。",
+            "幸せです。",
+            "正しいです。",
+            "問題ない。"
+        ],
+        "answer": 0,
+        "explanation": "相手の様子が変な時に尋ねる表現。"
+    },
+    {
+        "id": "q_0047",
+        "level": 2,
+        "category": "daily",
+        "question": "I have to go.",
+        "question_jp": "もう行かなくちゃ。",
+        "choices": [
+            "See you later.",
+            "Go ahead.",
+            "Where?",
+            "Why?"
+        ],
+        "choices_jp": [
+            "またね。",
+            "どうぞ。",
+            "どこへ？",
+            "なぜ？"
+        ],
+        "answer": 0,
+        "explanation": "別れの挨拶。"
+    },
+    {
+        "id": "q_0048",
+        "level": 2,
+        "category": "daily",
+        "question": "Hold on a second.",
+        "question_jp": "ちょっと待って。",
+        "choices": [
+            "Okay.",
+            "I hold.",
+            "Second is fast.",
+            "No."
+        ],
+        "choices_jp": [
+            "わかった。",
+            "持ちます。",
+            "秒は速いです。",
+            "いいえ。"
+        ],
+        "answer": 0,
+        "explanation": "相手を待たせる表現。"
+    },
+    {
+        "id": "q_0049",
+        "level": 1,
+        "category": "daily",
+        "question": "Good night.",
+        "question_jp": "おやすみなさい。",
+        "choices": [
+            "Sweet dreams.",
+            "Good morning.",
+            "Hello.",
+            "See you."
+        ],
+        "choices_jp": [
+            "いい夢を。",
+            "おはよう。",
+            "こんにちは。",
+            "またね。"
+        ],
+        "answer": 0,
+        "explanation": "就寝前の挨拶。"
+    },
+    {
+        "id": "q_0050",
+        "level": 1,
+        "category": "daily",
+        "question": "Are you busy?",
+        "question_jp": "忙しいですか？",
+        "choices": [
+            "A little.",
+            "Yes, I do.",
+            "No, I am not.",
+            "I am fine."
+        ],
+        "choices_jp": [
+            "少し。",
+            "はい、します。",
+            "いいえ、忙しくないです。",
+            "元気です。"
+        ],
+        "answer": 0,
+        "explanation": "忙しいか尋ねる問い。"
+    }
+]

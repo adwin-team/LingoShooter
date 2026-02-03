@@ -351,10 +351,36 @@ class Game {
     }
 
     async loadQuestions() {
+        const files = [
+            'questions_basic.json',
+            'questions_business.json',
+            'questions_travel.json',
+            'questions_grammar.json'
+        ];
+
         try {
-            const response = await fetch('questions.json');
-            if (!response.ok) throw new Error('Network response was not ok');
-            this.questions = await response.json();
+            const promises = files.map(file => fetch(file).then(res => {
+                if (!res.ok) throw new Error(`Failed to load ${file}`);
+                return res.json();
+            }));
+
+            const results = await Promise.allSettled(promises);
+            let combinedQuestions = [];
+
+            results.forEach((result, index) => {
+                if (result.status === 'fulfilled') {
+                    combinedQuestions = combinedQuestions.concat(result.value);
+                } else {
+                    console.warn(`Failed to load ${files[index]}:`, result.reason);
+                }
+            });
+
+            if (combinedQuestions.length > 0) {
+                this.questions = combinedQuestions;
+                console.log(`Loaded ${this.questions.length} questions from JSON files.`);
+            } else {
+                throw new Error('No questions loaded from any file.');
+            }
         } catch (e) {
             console.warn('Failed to load questions via fetch, using default fallback:', e);
             this.questions = DEFAULT_QUESTIONS;

@@ -1,0 +1,842 @@
+[
+    {
+        "id": "q_biz_0001",
+        "level": 2,
+        "category": "business",
+        "question": "Could you please send me the agenda?",
+        "question_jp": "アジェンダを送っていただけますか？",
+        "choices": [
+            "I will send it right away.",
+            "Agenda is happy.",
+            "No, thank you.",
+            "It is a meeting."
+        ],
+        "choices_jp": [
+            "すぐに送ります。",
+            "アジェンダは幸せです。",
+            "いいえ、結構です。",
+            "会議です。"
+        ],
+        "answer": 0,
+        "explanation": "資料の送付依頼。"
+    },
+    {
+        "id": "q_biz_0002",
+        "level": 2,
+        "category": "business",
+        "question": "I'm afraid I can't attend.",
+        "question_jp": "残念ながら出席できません。",
+        "choices": [
+            "That's unfortunate.",
+            "I am attending.",
+            "Attend is good.",
+            "See you yesterday."
+        ],
+        "choices_jp": [
+            "それは残念です。",
+            "私は出席しています。",
+            "出席は良いことです。",
+            "昨日会いましょう。"
+        ],
+        "answer": 0,
+        "explanation": "欠席の連絡。"
+    },
+    {
+        "id": "q_biz_0003",
+        "level": 3,
+        "category": "business",
+        "question": "We need to cut costs.",
+        "question_jp": "コストを削減する必要があります。",
+        "choices": [
+            "I agree.",
+            "Cost is high.",
+            "Cut is sharp.",
+            "No money."
+        ],
+        "choices_jp": [
+            "賛成です。",
+            "コストは高いです。",
+            "切るのは鋭いです。",
+            "お金がない。"
+        ],
+        "answer": 0,
+        "explanation": "コスト削減の提案。"
+    },
+    {
+        "id": "q_biz_0004",
+        "level": 2,
+        "category": "business",
+        "question": "Here is my business card.",
+        "question_jp": "私の名刺です。",
+        "choices": [
+            "Thank you, here is mine.",
+            "I don't need it.",
+            "Card is white.",
+            "I business you."
+        ],
+        "choices_jp": [
+            "ありがとうございます、こちらが私のものです。",
+            "いりません。",
+            "カードは白いです。",
+            "私はあなたをビジネスします。"
+        ],
+        "answer": 0,
+        "explanation": "名刺交換。"
+    },
+    {
+        "id": "q_biz_0005",
+        "level": 2,
+        "category": "business",
+        "question": "What's the purpose of this meeting?",
+        "question_jp": "この会議の目的は何ですか？",
+        "choices": [
+            "To discuss the new project.",
+            "Meeting is long.",
+            "I like meeting.",
+            "Purpose is good."
+        ],
+        "choices_jp": [
+            "新プロジェクトについて話し合うためです。",
+            "会議は長いです。",
+            "会議が好きです。",
+            "目的は良いです。"
+        ],
+        "answer": 0,
+        "explanation": "会議の目的確認。"
+    },
+    {
+        "id": "q_biz_0006",
+        "level": 3,
+        "category": "business",
+        "question": "We plan to expand our market.",
+        "question_jp": "市場を拡大する計画です。",
+        "choices": [
+            "That sounds ambitious.",
+            "Market is close.",
+            "Expansion is big.",
+            "No plan."
+        ],
+        "choices_jp": [
+            "それは野心的ですね。",
+            "市場は近いです。",
+            "拡大は大きいです。",
+            "計画はない。"
+        ],
+        "answer": 0,
+        "explanation": "事業計画への反応。"
+    },
+    {
+        "id": "q_biz_0007",
+        "level": 2,
+        "category": "business",
+        "question": "Who is in charge?",
+        "question_jp": "誰が担当ですか（責任者ですか）？",
+        "choices": [
+            "Mr. Smith is.",
+            "I charge money.",
+            "It is electric.",
+            "In the room."
+        ],
+        "choices_jp": [
+            "スミスさんです。",
+            "お金を請求します。",
+            "電気です。",
+            "部屋の中にいます。"
+        ],
+        "answer": 0,
+        "explanation": "担当者の確認。"
+    },
+    {
+        "id": "q_biz_0008",
+        "level": 3,
+        "category": "business",
+        "question": "Let's postpone the meeting.",
+        "question_jp": "会議を延期しましょう。",
+        "choices": [
+            "Okay, when?",
+            "I like post.",
+            "Meeting is now.",
+            "No postpone."
+        ],
+        "choices_jp": [
+            "わかりました、いつにしますか？",
+            "ポストが好きです。",
+            "会議は今です。",
+            "延期しない。"
+        ],
+        "answer": 0,
+        "explanation": "予定の変更提案。"
+    },
+    {
+        "id": "q_biz_0009",
+        "level": 2,
+        "category": "business",
+        "question": "I'm looking forward to working with you.",
+        "question_jp": "一緒にお仕事できるのを楽しみにしています。",
+        "choices": [
+            "Me too.",
+            "Work is hard.",
+            "I look forward.",
+            "Thank you."
+        ],
+        "choices_jp": [
+            "私もです。",
+            "仕事は大変です。",
+            "前を見ています。",
+            "ありがとう。"
+        ],
+        "answer": 0,
+        "explanation": "協力関係の挨拶。"
+    },
+    {
+        "id": "q_biz_0010",
+        "level": 3,
+        "category": "business",
+        "question": "The deadline is approaching.",
+        "question_jp": "締め切りが迫っています。",
+        "choices": [
+            "We need to hurry.",
+            "Dead is line.",
+            "Approach is good.",
+            "Slow down."
+        ],
+        "choices_jp": [
+            "急がなくては。",
+            "死は線です。",
+            "アプローチは良いです。",
+            "速度を落として。"
+        ],
+        "answer": 0,
+        "explanation": "進捗の確認。"
+    },
+    {
+        "id": "q_biz_0011",
+        "level": 2,
+        "category": "business",
+        "question": "Can I have a word with you?",
+        "question_jp": "少しお話できますか？",
+        "choices": [
+            "Sure, come in.",
+            "No words.",
+            "Word is power.",
+            "I am speaking."
+        ],
+        "choices_jp": [
+            "ええ、どうぞ。",
+            "言葉はない。",
+            "言葉は力なり。",
+            "話しています。"
+        ],
+        "answer": 0,
+        "explanation": "個別相談の依頼。"
+    },
+    {
+        "id": "q_biz_0012",
+        "level": 3,
+        "category": "business",
+        "question": "It's a win-win situation.",
+        "question_jp": "双方に利益がある状況です。",
+        "choices": [
+            "That's ideal.",
+            "I win.",
+            "You lose.",
+            "Game over."
+        ],
+        "choices_jp": [
+            "それは理想的ですね。",
+            "私の勝ち。",
+            "あなたの負け。",
+            "ゲームオーバー。"
+        ],
+        "answer": 0,
+        "explanation": "交渉の成果。"
+    },
+    {
+        "id": "q_biz_0013",
+        "level": 2,
+        "category": "business",
+        "question": "Please sign here.",
+        "question_jp": "ここに署名してください。",
+        "choices": [
+            "Okay.",
+            "Sign is red.",
+            "I have a pen.",
+            "No signature."
+        ],
+        "choices_jp": [
+            "わかりました。",
+            "標識は赤です。",
+            "ペンを持っています。",
+            "署名なし。"
+        ],
+        "answer": 0,
+        "explanation": "契約などの署名。"
+    },
+    {
+        "id": "q_biz_0014",
+        "level": 3,
+        "category": "business",
+        "question": "We should focus on quality.",
+        "question_jp": "品質に注力すべきです。",
+        "choices": [
+            "Absolutely.",
+            "Quantity is better.",
+            "Focus is hard.",
+            "Quality is bad."
+        ],
+        "choices_jp": [
+            "その通りです。",
+            "量の方が良いです。",
+            "集中は難しい。",
+            "質が悪いです。"
+        ],
+        "answer": 0,
+        "explanation": "戦略の提案。"
+    },
+    {
+        "id": "q_biz_0015",
+        "level": 2,
+        "category": "business",
+        "question": "How about next Tuesday?",
+        "question_jp": "来週の火曜日はどうですか？",
+        "choices": [
+            "That works for me.",
+            "Tuesday is day.",
+            "Next is after.",
+            "I am busy."
+        ],
+        "choices_jp": [
+            "私はそれで大丈夫です。",
+            "火曜日は日です。",
+            "次は後です。",
+            "忙しいです。"
+        ],
+        "answer": 0,
+        "explanation": "日程調整。"
+    },
+    {
+        "id": "q_biz_0016",
+        "level": 2,
+        "category": "business",
+        "question": "I'll get back to you.",
+        "question_jp": "折り返し連絡します（また改めて連絡します）。",
+        "choices": [
+            "Thank you.",
+            "Don't come back.",
+            "Back is hurt.",
+            "Get it."
+        ],
+        "choices_jp": [
+            "ありがとうございます。",
+            "戻ってこないで。",
+            "背中が痛いです。",
+            "それを取って。"
+        ],
+        "answer": 0,
+        "explanation": "保留の対応。"
+    },
+    {
+        "id": "q_biz_0017",
+        "level": 3,
+        "category": "business",
+        "question": "This is top priority.",
+        "question_jp": "これは最優先事項です。",
+        "choices": [
+            "I'll do it first.",
+            "Priority is low.",
+            "Top is high.",
+            "No rush."
+        ],
+        "choices_jp": [
+            "最初にやります。",
+            "優先度は低いです。",
+            "頂上は高いです。",
+            "急がないで。"
+        ],
+        "answer": 0,
+        "explanation": "重要度の伝達。"
+    },
+    {
+        "id": "q_biz_0018",
+        "level": 2,
+        "category": "business",
+        "question": "Did you get my email?",
+        "question_jp": "私のメールは届きましたか？",
+        "choices": [
+            "Yes, I read it.",
+            "No email.",
+            "Mail is post.",
+            "I write letters."
+        ],
+        "choices_jp": [
+            "はい、読みました。",
+            "メールなし。",
+            "メールは郵便です。",
+            "手紙を書きます。"
+        ],
+        "answer": 0,
+        "explanation": "連絡の確認。"
+    },
+    {
+        "id": "q_biz_0019",
+        "level": 3,
+        "category": "business",
+        "question": "Let's summarize the points.",
+        "question_jp": "要点をまとめましょう。",
+        "choices": [
+            "Good idea.",
+            "Point is sharp.",
+            "Calculus is hard.",
+            "Summer is hot."
+        ],
+        "choices_jp": [
+            "いい考えですね。",
+            "点は鋭いです。",
+            "微積分は難しい。",
+            "夏は暑い。"
+        ],
+        "answer": 0,
+        "explanation": "議論の整理。"
+    },
+    {
+        "id": "q_biz_0020",
+        "level": 2,
+        "category": "business",
+        "question": "What's the budget?",
+        "question_jp": "予算はいくらですか？",
+        "choices": [
+            "It's 10,000 dollars.",
+            "Budget is low.",
+            "I have no money.",
+            "Buy it."
+        ],
+        "choices_jp": [
+            "1万ドルです。",
+            "予算は低いです。",
+            "お金がありません。",
+            "買って。"
+        ],
+        "answer": 0,
+        "explanation": "予算確認。"
+    },
+    {
+        "id": "q_biz_0021",
+        "level": 3,
+        "category": "business",
+        "question": "We need to hire more staff.",
+        "question_jp": "もっとスタッフを雇う必要があります。",
+        "choices": [
+            "I agree, we are short-handed.",
+            "Staff is stuff.",
+            "Hire is high.",
+            "No people."
+        ],
+        "choices_jp": [
+            "賛成です、人手不足です。",
+            "スタッフは物です。",
+            "雇用は高いです。",
+            "人はいません。"
+        ],
+        "answer": 0,
+        "explanation": "採用提案。"
+    },
+    {
+        "id": "q_biz_0022",
+        "level": 2,
+        "category": "business",
+        "question": "Please hold the line.",
+        "question_jp": "そのまま（電話を切らずに）お待ちください。",
+        "choices": [
+            "Okay, I'll wait.",
+            "Line is long.",
+            "I hold a pen.",
+            "Hang up."
+        ],
+        "choices_jp": [
+            "わかりました、待ちます。",
+            "線は長いです。",
+            "ペンを持っています。",
+            "電話を切る。"
+        ],
+        "answer": 0,
+        "explanation": "電話対応。"
+    },
+    {
+        "id": "q_biz_0023",
+        "level": 3,
+        "category": "business",
+        "question": "Our revenue has increased.",
+        "question_jp": "収益が増加しました。",
+        "choices": [
+            "That's great news.",
+            "Revenue is tax.",
+            "Decrease is bad.",
+            "I lost money."
+        ],
+        "choices_jp": [
+            "素晴らしいニュースですね。",
+            "歳入は税金です。",
+            "減少は悪いです。",
+            "お金を失くしました。"
+        ],
+        "answer": 0,
+        "explanation": "業績報告。"
+    },
+    {
+        "id": "q_biz_0024",
+        "level": 2,
+        "category": "business",
+        "question": "I have another meeting.",
+        "question_jp": "別の会議があります。",
+        "choices": [
+            "Okay, see you later.",
+            "Meeting is fun.",
+            "Another one.",
+            "Stay here."
+        ],
+        "choices_jp": [
+            "わかりました、また後で。",
+            "会議は楽しいです。",
+            "もう一つ。",
+            "ここにいて。"
+        ],
+        "answer": 0,
+        "explanation": "退席の理由。"
+    },
+    {
+        "id": "q_biz_0025",
+        "level": 3,
+        "category": "business",
+        "question": "We reached an agreement.",
+        "question_jp": "合意に達しました。",
+        "choices": [
+            "Congratulations.",
+            "Agree is yes.",
+            "Reach out.",
+            "No agreement."
+        ],
+        "choices_jp": [
+            "おめでとうございます。",
+            "同意ははい。",
+            "手を伸ばす。",
+            "合意なし。"
+        ],
+        "answer": 0,
+        "explanation": "交渉成立。"
+    },
+    {
+        "id": "q_biz_0026",
+        "level": 2,
+        "category": "business",
+        "question": "Where is the conference room?",
+        "question_jp": "会議室はどこですか？",
+        "choices": [
+            "Down the hall.",
+            "Room is big.",
+            "Conference is meeting.",
+            "I am here."
+        ],
+        "choices_jp": [
+            "廊下の先です。",
+            "部屋は大きいです。",
+            "カンファレンスは会議です。",
+            "私はここにいます。"
+        ],
+        "answer": 0,
+        "explanation": "場所の確認。"
+    },
+    {
+        "id": "q_biz_0027",
+        "level": 3,
+        "category": "business",
+        "question": "Let's brainstorm ideas.",
+        "question_jp": "アイデアを出し合いましょう（ブレインストーミング）。",
+        "choices": [
+            "Good, let's start.",
+            "Brain is storm.",
+            "Idea is light.",
+            "My head hurts."
+        ],
+        "choices_jp": [
+            "よし、始めましょう。",
+            "脳は嵐です。",
+            "アイデアは光です。",
+            "頭が痛いです。"
+        ],
+        "answer": 0,
+        "explanation": "創造的な議論の提案。"
+    },
+    {
+        "id": "q_biz_0028",
+        "level": 2,
+        "category": "business",
+        "question": "I am on a business trip.",
+        "question_jp": "出張中です。",
+        "choices": [
+            "Where are you?",
+            "Trip is fun.",
+            "Business is good.",
+            "Come home."
+        ],
+        "choices_jp": [
+            "どこにいるんですか？",
+            "旅行は楽しいです。",
+            "ビジネスは順調です。",
+            "帰っておいで。"
+        ],
+        "answer": 0,
+        "explanation": "状況説明。"
+    },
+    {
+        "id": "q_biz_0029",
+        "level": 3,
+        "category": "business",
+        "question": "Please verify the data.",
+        "question_jp": "データを確認（検証）してください。",
+        "choices": [
+            "I will check it.",
+            "Data is number.",
+            "Verify is true.",
+            "No data."
+        ],
+        "choices_jp": [
+            "確認します。",
+            "データは数字です。",
+            "検証は真実です。",
+            "データなし。"
+        ],
+        "answer": 0,
+        "explanation": "作業依頼。"
+    },
+    {
+        "id": "q_biz_0030",
+        "level": 2,
+        "category": "business",
+        "question": "Can you photocopy this?",
+        "question_jp": "これをコピーしてくれますか？",
+        "choices": [
+            "How many copies?",
+            "Photo is copy.",
+            "Copy machine.",
+            "No paper."
+        ],
+        "choices_jp": [
+            "何部ですか？",
+            "写真はコピーです。",
+            "コピー機。",
+            "紙がない。"
+        ],
+        "answer": 0,
+        "explanation": "事務作業の依頼。"
+    },
+    {
+        "id": "q_biz_0031",
+        "level": 3,
+        "category": "business",
+        "question": "The market is competitive.",
+        "question_jp": "市場は競争が激しいです。",
+        "choices": [
+            "We need a good strategy.",
+            "Competition is game.",
+            "Market is store.",
+            "I like winning."
+        ],
+        "choices_jp": [
+            "良い戦略が必要です。",
+            "競争はゲームです。",
+            "市場は店です。",
+            "勝つのが好きです。"
+        ],
+        "answer": 0,
+        "explanation": "市場分析。"
+    },
+    {
+        "id": "q_biz_0032",
+        "level": 2,
+        "category": "business",
+        "question": "Who is the manager?",
+        "question_jp": "マネージャーは誰ですか？",
+        "choices": [
+            "It's Ms. Lee.",
+            "Manager is boss.",
+            "I manage.",
+            "He is busy."
+        ],
+        "choices_jp": [
+            "リーさんです。",
+            "マネージャーは上司です。",
+            "私は管理します。",
+            "彼は忙しいです。"
+        ],
+        "answer": 0,
+        "explanation": "組織に関する質問。"
+    },
+    {
+        "id": "q_biz_0033",
+        "level": 3,
+        "category": "business",
+        "question": "We launched a new product.",
+        "question_jp": "新製品を発売しました。",
+        "choices": [
+            "How are the sales?",
+            "Launch is lunch.",
+            "Product is good.",
+            "It is new."
+        ],
+        "choices_jp": [
+            "売れ行きはどうですか？",
+            "ローンチは昼食です。",
+            "製品は良いです。",
+            "それは新しいです。"
+        ],
+        "answer": 0,
+        "explanation": "ニュースの報告。"
+    },
+    {
+        "id": "q_biz_0034",
+        "level": 2,
+        "category": "business",
+        "question": "Are you available now?",
+        "question_jp": "今、空いていますか（時間ありますか）？",
+        "choices": [
+            "Yes, what is it?",
+            "No, I am free.",
+            "Available is here.",
+            "I am expensive."
+        ],
+        "choices_jp": [
+            "はい、何ですか？",
+            "いいえ、暇です。",
+            "利用可能です。",
+            "私は高いです。"
+        ],
+        "answer": 0,
+        "explanation": "都合の確認。"
+    },
+    {
+        "id": "q_biz_0035",
+        "level": 3,
+        "category": "business",
+        "question": "Let's negotiate the price.",
+        "question_jp": "価格交渉しましょう。",
+        "choices": [
+            "Okay, what is your offer?",
+            "Price is high.",
+            "Negotiate is talk.",
+            "I buy it."
+        ],
+        "choices_jp": [
+            "わかりました、いくらを提示しますか？",
+            "価格は高いです。",
+            "交渉は話すことです。",
+            "買います。"
+        ],
+        "answer": 0,
+        "explanation": "取引。"
+    },
+    {
+        "id": "q_biz_0036",
+        "level": 2,
+        "category": "business",
+        "question": "Please attach the file.",
+        "question_jp": "ファイルを添付してください。",
+        "choices": [
+            "I did.",
+            "Attach is glue.",
+            "File is paper.",
+            "No computer."
+        ],
+        "choices_jp": [
+            "しました。",
+            "添付は糊です。",
+            "ファイルは紙です。",
+            "パソコンがない。"
+        ],
+        "answer": 0,
+        "explanation": "メール操作の指示。"
+    },
+    {
+        "id": "q_biz_0037",
+        "level": 3,
+        "category": "business",
+        "question": "Our shares went up.",
+        "question_jp": "株価が上がりました。",
+        "choices": [
+            "Stockholders will be happy.",
+            "Share is share.",
+            "Up is high.",
+            "Go down."
+        ],
+        "choices_jp": [
+            "株主も喜ぶでしょう。",
+            "シェアは共有です。",
+            "上は高いです。",
+            "下がる。"
+        ],
+        "answer": 0,
+        "explanation": "株価変動。"
+    },
+    {
+        "id": "q_biz_0038",
+        "level": 2,
+        "category": "business",
+        "question": "I'm in a meeting.",
+        "question_jp": "会議中です。",
+        "choices": [
+            "Talk to you later.",
+            "Meeting is fun.",
+            "Good luck.",
+            "Where?"
+        ],
+        "choices_jp": [
+            "また後で話しましょう。",
+            "会議は楽しいです。",
+            "頑張って。",
+            "どこ？"
+        ],
+        "answer": 0,
+        "explanation": "状況説明。"
+    },
+    {
+        "id": "q_biz_0039",
+        "level": 3,
+        "category": "business",
+        "question": "We value your feedback.",
+        "question_jp": "ご意見（フィードバック）を大切にしています。",
+        "choices": [
+            "Here is my comment.",
+            "Value is money.",
+            "Feedback is back.",
+            "No comment."
+        ],
+        "choices_jp": [
+            "これが私のコメントです。",
+            "価値はお金です。",
+            "フィードバックは背中です。",
+            "コメントなし。"
+        ],
+        "answer": 0,
+        "explanation": "顧客対応。"
+    },
+    {
+        "id": "q_biz_0040",
+        "level": 2,
+        "category": "business",
+        "question": "Is the proposal ready?",
+        "question_jp": "提案書はできましたか？",
+        "choices": [
+            "Almost done.",
+            "Proposal is marriage.",
+            "Ready steady go.",
+            "I forgot."
+        ],
+        "choices_jp": [
+            "ほぼ完了です。",
+            "プロポーズは結婚です。",
+            "よーいドン。",
+            "忘れました。"
+        ],
+        "answer": 0,
+        "explanation": "進捗確認。"
+    }
+]

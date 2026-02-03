@@ -1,0 +1,632 @@
+[
+    {
+        "id": "q_grm_0001",
+        "level": 3,
+        "category": "grammar",
+        "question": "If I ________ you, I would study harder.",
+        "question_jp": "もし私があなたなら、もっと一生懸命勉強するのに。",
+        "choices": [
+            "were",
+            "am",
+            "was",
+            "be"
+        ],
+        "choices_jp": [
+            "were",
+            "am",
+            "was",
+            "be"
+        ],
+        "answer": 0,
+        "explanation": "仮定法過去（If I were you...）。"
+    },
+    {
+        "id": "q_grm_0002",
+        "level": 3,
+        "category": "grammar",
+        "question": "He ________ tv when I came home.",
+        "question_jp": "私が帰宅した時、彼はテレビを見ていました。",
+        "choices": [
+            "was watching",
+            "watched",
+            "watches",
+            "has watched"
+        ],
+        "choices_jp": [
+            "was watching",
+            "watched",
+            "watches",
+            "has watched"
+        ],
+        "answer": 0,
+        "explanation": "過去進行形。"
+    },
+    {
+        "id": "q_grm_0003",
+        "level": 3,
+        "category": "grammar",
+        "question": "I have been living here ________ 2010.",
+        "question_jp": "2010年からここに住んでいます。",
+        "choices": [
+            "since",
+            "for",
+            "from",
+            "during"
+        ],
+        "choices_jp": [
+            "since",
+            "for",
+            "from",
+            "during"
+        ],
+        "answer": 0,
+        "explanation": "現在完了進行形（起点のsince）。"
+    },
+    {
+        "id": "q_grm_0004",
+        "level": 3,
+        "category": "grammar",
+        "question": "She is good ________ playing the piano.",
+        "question_jp": "彼女はピアノを弾くのが上手です。",
+        "choices": [
+            "at",
+            "in",
+            "on",
+            "with"
+        ],
+        "choices_jp": [
+            "at",
+            "in",
+            "on",
+            "with"
+        ],
+        "answer": 0,
+        "explanation": "be good at -ing。"
+    },
+    {
+        "id": "q_grm_0005",
+        "level": 3,
+        "category": "grammar",
+        "question": "He gave up ________.",
+        "question_jp": "彼はタバコをやめました。",
+        "choices": [
+            "smoking",
+            "to smoke",
+            "smoke",
+            "smoked"
+        ],
+        "choices_jp": [
+            "smoking",
+            "to smoke",
+            "smoke",
+            "smoked"
+        ],
+        "answer": 0,
+        "explanation": "give up -ing。"
+    },
+    {
+        "id": "q_grm_0006",
+        "level": 3,
+        "category": "grammar",
+        "question": "This is the book ________ I told you about.",
+        "question_jp": "これが私が君に話した本だよ。",
+        "choices": [
+            "that",
+            "who",
+            "what",
+            "where"
+        ],
+        "choices_jp": [
+            "that",
+            "who",
+            "what",
+            "where"
+        ],
+        "answer": 0,
+        "explanation": "関係代名詞。"
+    },
+    {
+        "id": "q_grm_0007",
+        "level": 3,
+        "category": "grammar",
+        "question": "I don't know where he ________.",
+        "question_jp": "彼がどこに住んでいるか知りません。",
+        "choices": [
+            "lives",
+            "live",
+            "is living",
+            "does live"
+        ],
+        "choices_jp": [
+            "lives",
+            "live",
+            "is living",
+            "does live"
+        ],
+        "answer": 0,
+        "explanation": "間接疑問文。"
+    },
+    {
+        "id": "q_grm_0008",
+        "level": 3,
+        "category": "grammar",
+        "question": "You ________ smoke here. It's forbidden.",
+        "question_jp": "ここでタバコを吸ってはいけません。禁止です。",
+        "choices": [
+            "must not",
+            "don't have to",
+            "should not",
+            "cannot"
+        ],
+        "choices_jp": [
+            "must not",
+            "don't have to",
+            "should not",
+            "cannot"
+        ],
+        "answer": 0,
+        "explanation": "禁止（must not）。"
+    },
+    {
+        "id": "q_grm_0009",
+        "level": 3,
+        "category": "grammar",
+        "question": "He is taller ________ his brother.",
+        "question_jp": "彼は兄よりも背が高いです。",
+        "choices": [
+            "than",
+            "as",
+            "from",
+            "to"
+        ],
+        "choices_jp": [
+            "than",
+            "as",
+            "from",
+            "to"
+        ],
+        "answer": 0,
+        "explanation": "比較級。"
+    },
+    {
+        "id": "q_grm_0010",
+        "level": 3,
+        "category": "grammar",
+        "question": "This car was ________ in Japan.",
+        "question_jp": "この車は日本で作られました。",
+        "choices": [
+            "made",
+            "make",
+            "making",
+            "makes"
+        ],
+        "choices_jp": [
+            "made",
+            "make",
+            "making",
+            "makes"
+        ],
+        "answer": 0,
+        "explanation": "受動態。"
+    },
+    {
+        "id": "q_grm_0011",
+        "level": 3,
+        "category": "grammar",
+        "question": "I want something ________ to drink.",
+        "question_jp": "何か冷たい飲み物が欲しいです。",
+        "choices": [
+            "cold",
+            "colder",
+            "coldest",
+            "hot"
+        ],
+        "choices_jp": [
+            "cold",
+            "colder",
+            "coldest",
+            "hot"
+        ],
+        "answer": 0,
+        "explanation": "不定代名詞の修飾語順（something cold）。"
+    },
+    {
+        "id": "q_grm_0012",
+        "level": 3,
+        "category": "grammar",
+        "question": "Please tell me ________ to use this.",
+        "question_jp": "これの使い方を教えてください。",
+        "choices": [
+            "how",
+            "what",
+            "where",
+            "when"
+        ],
+        "choices_jp": [
+            "how",
+            "what",
+            "where",
+            "when"
+        ],
+        "answer": 0,
+        "explanation": "疑問詞 + to不定詞。"
+    },
+    {
+        "id": "q_grm_0013",
+        "level": 3,
+        "category": "grammar",
+        "question": "It is interesting ________ learn English.",
+        "question_jp": "英語を学ぶことは面白いです。",
+        "choices": [
+            "to",
+            "for",
+            "of",
+            "at"
+        ],
+        "choices_jp": [
+            "to",
+            "for",
+            "of",
+            "at"
+        ],
+        "answer": 0,
+        "explanation": "形式主語 It ... to ..."
+    },
+    {
+        "id": "q_grm_0014",
+        "level": 3,
+        "category": "grammar",
+        "question": "There ________ a lot of people in the park.",
+        "question_jp": "公園にはたくさんの人がいました。",
+        "choices": [
+            "were",
+            "was",
+            "are",
+            "is"
+        ],
+        "choices_jp": [
+            "were",
+            "was",
+            "are",
+            "is"
+        ],
+        "answer": 0,
+        "explanation": "There is/are構文の過去形。"
+    },
+    {
+        "id": "q_grm_0015",
+        "level": 3,
+        "category": "grammar",
+        "question": "Have you ________ eaten natto?",
+        "question_jp": "納豆を食べたことがありますか（今までに）？",
+        "choices": [
+            "ever",
+            "never",
+            "just",
+            "yet"
+        ],
+        "choices_jp": [
+            "ever",
+            "never",
+            "just",
+            "yet"
+        ],
+        "answer": 0,
+        "explanation": "現在完了（経験）で使う副詞。"
+    },
+    {
+        "id": "q_grm_0016",
+        "level": 3,
+        "category": "grammar",
+        "question": "I'm going to ________ her tomorrow.",
+        "question_jp": "明日彼女に会うつもりです。",
+        "choices": [
+            "see",
+            "saw",
+            "seeing",
+            "seen"
+        ],
+        "choices_jp": [
+            "see",
+            "saw",
+            "seeing",
+            "seen"
+        ],
+        "answer": 0,
+        "explanation": "be going to + 動詞の原形。"
+    },
+    {
+        "id": "q_grm_0017",
+        "level": 3,
+        "category": "grammar",
+        "question": "He runs ________ fast as Ken.",
+        "question_jp": "彼はケンと同じくらい速く走ります。",
+        "choices": [
+            "as",
+            "so",
+            "very",
+            "too"
+        ],
+        "choices_jp": [
+            "as",
+            "so",
+            "very",
+            "too"
+        ],
+        "answer": 0,
+        "explanation": "原級比較（as ... as）。"
+    },
+    {
+        "id": "q_grm_0018",
+        "level": 3,
+        "category": "grammar",
+        "question": "My father ________ coffee every morning.",
+        "question_jp": "父は毎朝コーヒーを飲みます。",
+        "choices": [
+            "drinks",
+            "drink",
+            "drinking",
+            "drank"
+        ],
+        "choices_jp": [
+            "drinks",
+            "drink",
+            "drinking",
+            "drank"
+        ],
+        "answer": 0,
+        "explanation": "三単現のs。"
+    },
+    {
+        "id": "q_grm_0019",
+        "level": 3,
+        "category": "grammar",
+        "question": "Look at that bird ________ in the sky.",
+        "question_jp": "空を飛んでいるあの鳥を見て。",
+        "choices": [
+            "flying",
+            "fly",
+            "flew",
+            "flown"
+        ],
+        "choices_jp": [
+            "flying",
+            "fly",
+            "flew",
+            "flown"
+        ],
+        "answer": 0,
+        "explanation": "現在分詞の形容詞的用法。"
+    },
+    {
+        "id": "q_grm_0020",
+        "level": 3,
+        "category": "grammar",
+        "question": "The boy ________ by the window is Tom.",
+        "question_jp": "窓のそばに立っている少年はトムです。",
+        "choices": [
+            "standing",
+            "stand",
+            "stood",
+            "stands"
+        ],
+        "choices_jp": [
+            "standing",
+            "stand",
+            "stood",
+            "stands"
+        ],
+        "answer": 0,
+        "explanation": "現在分詞。"
+    },
+    {
+        "id": "q_grm_0021",
+        "level": 3,
+        "category": "grammar",
+        "question": "I was ________ when I heard the news.",
+        "question_jp": "そのニュースを聞いて驚きました。",
+        "choices": [
+            "surprised",
+            "surprising",
+            "surprise",
+            "surprises"
+        ],
+        "choices_jp": [
+            "surprised",
+            "surprising",
+            "surprise",
+            "surprises"
+        ],
+        "answer": 0,
+        "explanation": "感情の受動態（be surprised）。"
+    },
+    {
+        "id": "q_grm_0022",
+        "level": 3,
+        "category": "grammar",
+        "question": "Would you mind ________ the door?",
+        "question_jp": "ドアを開けていただけませんか？",
+        "choices": [
+            "opening",
+            "open",
+            "opened",
+            "to open"
+        ],
+        "choices_jp": [
+            "opening",
+            "open",
+            "opened",
+            "to open"
+        ],
+        "answer": 0,
+        "explanation": "Would you mind -ing?"
+    },
+    {
+        "id": "q_grm_0023",
+        "level": 3,
+        "category": "grammar",
+        "question": "I have to ________ my homework.",
+        "question_jp": "宿題をしなければなりません。",
+        "choices": [
+            "do",
+            "does",
+            "did",
+            "done"
+        ],
+        "choices_jp": [
+            "do",
+            "does",
+            "did",
+            "done"
+        ],
+        "answer": 0,
+        "explanation": "have to + 動詞の原形。"
+    },
+    {
+        "id": "q_grm_0024",
+        "level": 3,
+        "category": "grammar",
+        "question": "She works ________ hard.",
+        "question_jp": "彼女はとても熱心に働きます。",
+        "choices": [
+            "very",
+            "many",
+            "much",
+            "a lot"
+        ],
+        "choices_jp": [
+            "very",
+            "many",
+            "much",
+            "a lot"
+        ],
+        "answer": 0,
+        "explanation": "副詞の強調。"
+    },
+    {
+        "id": "q_grm_0025",
+        "level": 3,
+        "category": "grammar",
+        "question": "Which do you like ________, tea or coffee?",
+        "question_jp": "紅茶とコーヒー、どちらが好きですか？",
+        "choices": [
+            "better",
+            "best",
+            "good",
+            "well"
+        ],
+        "choices_jp": [
+            "better",
+            "best",
+            "good",
+            "well"
+        ],
+        "answer": 0,
+        "explanation": "比較級（二者択一）。"
+    },
+    {
+        "id": "q_grm_0026",
+        "level": 3,
+        "category": "grammar",
+        "question": "It started ________ rain.",
+        "question_jp": "雨が降り始めました。",
+        "choices": [
+            "to",
+            "at",
+            "for",
+            "with"
+        ],
+        "choices_jp": [
+            "to",
+            "at",
+            "for",
+            "with"
+        ],
+        "answer": 0,
+        "explanation": "start to rain / start raining。"
+    },
+    {
+        "id": "q_grm_0027",
+        "level": 3,
+        "category": "grammar",
+        "question": "I am looking forward to ________ you.",
+        "question_jp": "お会いできるのを楽しみにしています。",
+        "choices": [
+            "seeing",
+            "see",
+            "saw",
+            "seen"
+        ],
+        "choices_jp": [
+            "seeing",
+            "see",
+            "saw",
+            "seen"
+        ],
+        "answer": 0,
+        "explanation": "look forward to -ing。"
+    },
+    {
+        "id": "q_grm_0028",
+        "level": 3,
+        "category": "grammar",
+        "question": "What time ________ you get up?",
+        "question_jp": "何時に起きましたか？",
+        "choices": [
+            "did",
+            "do",
+            "does",
+            "are"
+        ],
+        "choices_jp": [
+            "did",
+            "do",
+            "does",
+            "are"
+        ],
+        "answer": 0,
+        "explanation": "過去の疑問文。"
+    },
+    {
+        "id": "q_grm_0029",
+        "level": 3,
+        "category": "grammar",
+        "question": "I ________ be late for school.",
+        "question_jp": "学校に遅刻してはいけません。",
+        "choices": [
+            "must not",
+            "don't have to",
+            "can't",
+            "shouldn't"
+        ],
+        "choices_jp": [
+            "must not",
+            "don't have to",
+            "can't",
+            "shouldn't"
+        ],
+        "answer": 0,
+        "explanation": "禁止。"
+    },
+    {
+        "id": "q_grm_0030",
+        "level": 3,
+        "category": "grammar",
+        "question": "Let's ________ to the park.",
+        "question_jp": "公園に行きましょう。",
+        "choices": [
+            "go",
+            "going",
+            "goes",
+            "went"
+        ],
+        "choices_jp": [
+            "go",
+            "going",
+            "goes",
+            "went"
+        ],
+        "answer": 0,
+        "explanation": "Let's + 動詞の原形。"
+    }
+]

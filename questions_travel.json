@@ -1,0 +1,842 @@
+[
+    {
+        "id": "q_trv_0001",
+        "level": 2,
+        "category": "travel",
+        "question": "Where is the baggage claim?",
+        "question_jp": "手荷物受取所はどこですか？",
+        "choices": [
+            "Follow the signs.",
+            "I lost my bag.",
+            "Baggage is heavy.",
+            "Claim is here."
+        ],
+        "choices_jp": [
+            "標識に従ってください。",
+            "鞄をなくしました。",
+            "荷物は重いです。",
+            "請求はこちら。"
+        ],
+        "answer": 0,
+        "explanation": "空港での案内。"
+    },
+    {
+        "id": "q_trv_0002",
+        "level": 2,
+        "category": "travel",
+        "question": "One way ticket to Tokyo, please.",
+        "question_jp": "東京への片道切符をお願いします。",
+        "choices": [
+            "That will be 1000 yen.",
+            "Tokyo is far.",
+            "Round trip is better.",
+            "Here is a map."
+        ],
+        "choices_jp": [
+            "1000円になります。",
+            "東京は遠いです。",
+            "往復の方がいいです。",
+            "地図をどうぞ。"
+        ],
+        "answer": 0,
+        "explanation": "切符の購入。"
+    },
+    {
+        "id": "q_trv_0003",
+        "level": 2,
+        "category": "travel",
+        "question": "Is breakfast included?",
+        "question_jp": "朝食は含まれていますか？",
+        "choices": [
+            "Yes, it is served from 7 to 9.",
+            "Breakfast is yummy.",
+            "I like eggs.",
+            "No, dinner only."
+        ],
+        "choices_jp": [
+            "はい、7時から9時まで提供されます。",
+            "朝食はおいしいです。",
+            "卵が好きです。",
+            "いいえ、夕食のみです。"
+        ],
+        "answer": 0,
+        "explanation": "ホテルでの確認。"
+    },
+    {
+        "id": "q_trv_0004",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I have a window seat?",
+        "question_jp": "窓側の席をお願いできますか？",
+        "choices": [
+            "Let me check availability.",
+            "Window is open.",
+            "Seat is soft.",
+            "I prefer aisle."
+        ],
+        "choices_jp": [
+            "空き状況を確認します。",
+            "窓は開いています。",
+            "席は柔らかいです。",
+            "通路側が好きです。"
+        ],
+        "answer": 0,
+        "explanation": "座席の要望。"
+    },
+    {
+        "id": "q_trv_0005",
+        "level": 2,
+        "category": "travel",
+        "question": "Do you have a city map?",
+        "question_jp": "市内地図はありますか？",
+        "choices": [
+            "Yes, here you go.",
+            "Map is old.",
+            "City is big.",
+            "Google Maps."
+        ],
+        "choices_jp": [
+            "はい、どうぞ。",
+            "地図は古いです。",
+            "都市は大きいです。",
+            "グーグルマップ。"
+        ],
+        "answer": 0,
+        "explanation": "情報の入手。"
+    },
+    {
+        "id": "q_trv_0006",
+        "level": 2,
+        "category": "travel",
+        "question": "How do I get to the museum?",
+        "question_jp": "美術館へはどう行けばいいですか？",
+        "choices": [
+            "Take bus number 5.",
+            "Museum is art.",
+            "I like painting.",
+            "It is closed."
+        ],
+        "choices_jp": [
+            "5番のバスに乗ってください。",
+            "美術館は芸術です。",
+            "絵が好きです。",
+            "閉まっています。"
+        ],
+        "answer": 0,
+        "explanation": "道案内。"
+    },
+    {
+        "id": "q_trv_0007",
+        "level": 2,
+        "category": "travel",
+        "question": "I would like to check out.",
+        "question_jp": "チェックアウトしたいのですが。",
+        "choices": [
+            "Room number, please.",
+            "Check is out.",
+            "I like checking.",
+            "Good night."
+        ],
+        "choices_jp": [
+            "部屋番号をお願いします。",
+            "チェックはアウトです。",
+            "チェックが好きです。",
+            "おやすみなさい。"
+        ],
+        "answer": 0,
+        "explanation": "チェックアウト。"
+    },
+    {
+        "id": "q_trv_0008",
+        "level": 2,
+        "category": "travel",
+        "question": "Can you call a taxi for me?",
+        "question_jp": "タクシーを呼んでもらえますか？",
+        "choices": [
+            "Certainly, where to?",
+            "Taxi is yellow.",
+            "I drive a car.",
+            "Call me maybe."
+        ],
+        "choices_jp": [
+            "かしこまりました、どちらまで？",
+            "タクシーは黄色です。",
+            "私は車を運転します。",
+            "電話してね。"
+        ],
+        "answer": 0,
+        "explanation": "タクシーの手配。"
+    },
+    {
+        "id": "q_trv_0009",
+        "level": 2,
+        "category": "travel",
+        "question": "Is there free Wi-Fi?",
+        "question_jp": "無料Wi-Fiはありますか？",
+        "choices": [
+            "Yes, the password is 'guest'.",
+            "No internet.",
+            "Wi-Fi is fast.",
+            "Connect me."
+        ],
+        "choices_jp": [
+            "はい、パスワードは 'guest' です。",
+            "インターネットなし。",
+            "Wi-Fiは速いです。",
+            "接続して。"
+        ],
+        "answer": 0,
+        "explanation": "ネット環境の確認。"
+    },
+    {
+        "id": "q_trv_0010",
+        "level": 2,
+        "category": "travel",
+        "question": "I lost my passport.",
+        "question_jp": "パスポートをなくしました。",
+        "choices": [
+            "Go to the embassy.",
+            "Passport is red.",
+            "Don't lose it.",
+            "Travel is fun."
+        ],
+        "choices_jp": [
+            "大使館に行ってください。",
+            "パスポートは赤です。",
+            "なくさないで。",
+            "旅行は楽しいです。"
+        ],
+        "answer": 0,
+        "explanation": "トラブル対応。"
+    },
+    {
+        "id": "q_trv_0011",
+        "level": 2,
+        "category": "travel",
+        "question": "Where is the nearest ATM?",
+        "question_jp": "一番近いATMはどこですか？",
+        "choices": [
+            "Inside the convenience store.",
+            "Money is important.",
+            "ATM is machine.",
+            "I have cash."
+        ],
+        "choices_jp": [
+            "コンビニの中にあります。",
+            "お金は大事です。",
+            "ATMは機械です。",
+            "現金を持っています。"
+        ],
+        "answer": 0,
+        "explanation": "場所の確認。"
+    },
+    {
+        "id": "q_trv_0012",
+        "level": 2,
+        "category": "travel",
+        "question": "Do you accept credit cards?",
+        "question_jp": "クレジットカードは使えますか？",
+        "choices": [
+            "Sorry, cash only.",
+            "Card is plastic.",
+            "I have Visa.",
+            "Thank you."
+        ],
+        "choices_jp": [
+            "すみません、現金のみです。",
+            "カードはプラスチックです。",
+            "ビザを持っています。",
+            "ありがとう。"
+        ],
+        "answer": 0,
+        "explanation": "支払い方法。"
+    },
+    {
+        "id": "q_trv_0013",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I leave my bags here?",
+        "question_jp": "ここに荷物を預けられますか？",
+        "choices": [
+            "Yes, until 6 PM.",
+            "Bag is heavy.",
+            "Leave it alone.",
+            "No bags."
+        ],
+        "choices_jp": [
+            "はい、午後6時までです。",
+            "鞄は重いです。",
+            "ほっといて。",
+            "鞄なし。"
+        ],
+        "answer": 0,
+        "explanation": "荷物保管。"
+    },
+    {
+        "id": "q_trv_0014",
+        "level": 2,
+        "category": "travel",
+        "question": "How late is this open?",
+        "question_jp": "ここは遅くまで開いていますか（何時までですか）？",
+        "choices": [
+            "Until 10 PM.",
+            "Open sesame.",
+            "It is late.",
+            "Start now."
+        ],
+        "choices_jp": [
+            "午後10時までです。",
+            "開けゴマ。",
+            "遅いです。",
+            "今始める。"
+        ],
+        "answer": 0,
+        "explanation": "営業時間の確認。"
+    },
+    {
+        "id": "q_trv_0015",
+        "level": 2,
+        "category": "travel",
+        "question": "A table for two, please.",
+        "question_jp": "2人です（レストランで）。",
+        "choices": [
+            "Right this way.",
+            "Table is wood.",
+            "Two people.",
+            "Eat food."
+        ],
+        "choices_jp": [
+            "こちらへどうぞ。",
+            "テーブルは木製です。",
+            "2人の人。",
+            "ご飯を食べる。"
+        ],
+        "answer": 0,
+        "explanation": "入店時の挨拶。"
+    },
+    {
+        "id": "q_trv_0016",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I have some water?",
+        "question_jp": "お水をいただけますか？",
+        "choices": [
+            "Coming right up.",
+            "Water is wet.",
+            "Drink it.",
+            "No water."
+        ],
+        "choices_jp": [
+            "すぐお持ちします。",
+            "水は濡れています。",
+            "それを飲んで。",
+            "水なし。"
+        ],
+        "answer": 0,
+        "explanation": "注文。"
+    },
+    {
+        "id": "q_trv_0017",
+        "level": 2,
+        "category": "travel",
+        "question": "The air conditioner isn't working.",
+        "question_jp": "エアコンが動きません。",
+        "choices": [
+            "I'll send someone to fix it.",
+            "It is hot.",
+            "Work hard.",
+            "Open the window."
+        ],
+        "choices_jp": [
+            "修理の者を向かわせます。",
+            "暑いです。",
+            "一生懸命働く。",
+            "窓を開けて。"
+        ],
+        "answer": 0,
+        "explanation": "クレーム対応。"
+    },
+    {
+        "id": "q_trv_0018",
+        "level": 2,
+        "category": "travel",
+        "question": "Where is the subway station?",
+        "question_jp": "地下鉄の駅はどこですか？",
+        "choices": [
+            "Go down those stairs.",
+            "Train is fast.",
+            "Station is busy.",
+            "Underground."
+        ],
+        "choices_jp": [
+            "その階段を降りてください。",
+            "電車は速いです。",
+            "駅は忙しいです。",
+            "地下。"
+        ],
+        "answer": 0,
+        "explanation": "道案内。"
+    },
+    {
+        "id": "q_trv_0019",
+        "level": 2,
+        "category": "travel",
+        "question": "How much is the fare?",
+        "question_jp": "運賃はいくらですか？",
+        "choices": [
+            "It's 200 yen.",
+            "Fare is fair.",
+            "Money please.",
+            "Ticket."
+        ],
+        "choices_jp": [
+            "200円です。",
+            "運賃は公平です。",
+            "お金をください。",
+            "切符。"
+        ],
+        "answer": 0,
+        "explanation": "支払い確認。"
+    },
+    {
+        "id": "q_trv_0020",
+        "level": 2,
+        "category": "travel",
+        "question": "Is this seat taken?",
+        "question_jp": "この席は空いていますか？",
+        "choices": [
+            "No, go ahead.",
+            "Yes, my friend is here.",
+            "Take a seat.",
+            "Stand up."
+        ],
+        "choices_jp": [
+            "いいえ、どうぞ（座ってください）。",
+            "はい、友人がいます。",
+            "座って。",
+            "立って。"
+        ],
+        "answer": 0,
+        "explanation": "座席確保。"
+    },
+    {
+        "id": "q_trv_0021",
+        "level": 2,
+        "category": "travel",
+        "question": "I have a reservation.",
+        "question_jp": "予約しています。",
+        "choices": [
+            "What is your name?",
+            "Good job.",
+            "Reservation is book.",
+            "Welcome back."
+        ],
+        "choices_jp": [
+            "お名前は何ですか？",
+            "よくやった。",
+            "予約は本です。",
+            "おかえりなさい。"
+        ],
+        "answer": 0,
+        "explanation": "チェックイン。"
+    },
+    {
+        "id": "q_trv_0022",
+        "level": 2,
+        "category": "travel",
+        "question": "Do you have a menu in English?",
+        "question_jp": "英語のメニューはありますか？",
+        "choices": [
+            "Yes, here it is.",
+            "No English.",
+            "Menu is food.",
+            "Read Japanese."
+        ],
+        "choices_jp": [
+            "はい、こちらです。",
+            "英語なし。",
+            "メニューは食べ物です。",
+            "日本語を読んで。"
+        ],
+        "answer": 0,
+        "explanation": "レストランでの要望。"
+    },
+    {
+        "id": "q_trv_0023",
+        "level": 2,
+        "category": "travel",
+        "question": "Check, please.",
+        "question_jp": "お会計をお願いします。",
+        "choices": [
+            "Here is your bill.",
+            "Check it out.",
+            "No money.",
+            "Okay."
+        ],
+        "choices_jp": [
+            "こちらが請求書です。",
+            "要チェック。",
+            "お金がない。",
+            "はい。"
+        ],
+        "answer": 0,
+        "explanation": "会計。"
+    },
+    {
+        "id": "q_trv_0024",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I try this on?",
+        "question_jp": "これを試着してもいいですか？",
+        "choices": [
+            "Fitting room is over there.",
+            "Try harder.",
+            "It fits.",
+            "Wear it."
+        ],
+        "choices_jp": [
+            "試着室はあちらです。",
+            "もっと頑張って。",
+            "合います。",
+            "着てみて。"
+        ],
+        "answer": 0,
+        "explanation": "ショッピング。"
+    },
+    {
+        "id": "q_trv_0025",
+        "level": 2,
+        "category": "travel",
+        "question": "It's too expensive.",
+        "question_jp": "高すぎます。",
+        "choices": [
+            "I can give you a discount.",
+            "It is cheap.",
+            "Money talks.",
+            "Don't buy."
+        ],
+        "choices_jp": [
+            "割引できますよ。",
+            "安いです。",
+            "お金が物を言う。",
+            "買わないで。"
+        ],
+        "answer": 0,
+        "explanation": "価格交渉。"
+    },
+    {
+        "id": "q_trv_0026",
+        "level": 2,
+        "category": "travel",
+        "question": "Where is the restroom?",
+        "question_jp": "お手洗いはどこですか？",
+        "choices": [
+            "In the back.",
+            "Rest is good.",
+            "Room is clean.",
+            "Toilet paper."
+        ],
+        "choices_jp": [
+            "奥にあります。",
+            "休息は良いです。",
+            "部屋はきれいです。",
+            "トイレットペーパー。"
+        ],
+        "answer": 0,
+        "explanation": "場所確認。"
+    },
+    {
+        "id": "q_trv_0027",
+        "level": 2,
+        "category": "travel",
+        "question": "What is this?",
+        "question_jp": "これを何ですか？",
+        "choices": [
+            "It's a local dish.",
+            "I don't know.",
+            "This is a pen.",
+            "Eat it."
+        ],
+        "choices_jp": [
+            "郷土料理です。",
+            "知りません。",
+            "これはペンです。",
+            "食べて。"
+        ],
+        "answer": 0,
+        "explanation": "質問。"
+    },
+    {
+        "id": "q_trv_0028",
+        "level": 2,
+        "category": "travel",
+        "question": "Can you speak slowly?",
+        "question_jp": "ゆっくり話してくれますか？",
+        "choices": [
+            "O-k-a-y.",
+            "No.",
+            "Fast is good.",
+            "Listen."
+        ],
+        "choices_jp": [
+            "わ・か・り・ま・し・た。",
+            "いいえ。",
+            "速いのは良い。",
+            "聞いて。"
+        ],
+        "answer": 0,
+        "explanation": "コミュニケーション。"
+    },
+    {
+        "id": "q_trv_0029",
+        "level": 2,
+        "category": "travel",
+        "question": "I am having trouble with...",
+        "question_jp": "〜で困っています。",
+        "choices": [
+            "How can I help?",
+            "Trouble is bad.",
+            "Good luck.",
+            "Fix it."
+        ],
+        "choices_jp": [
+            "どうしましたか（どう手伝えますか）？",
+            "トラブルは悪いです。",
+            "頑張って。",
+            "直して。"
+        ],
+        "answer": 0,
+        "explanation": "相談。"
+    },
+    {
+        "id": "q_trv_0030",
+        "level": 2,
+        "category": "travel",
+        "question": "Is it safe here?",
+        "question_jp": "ここは安全ですか？",
+        "choices": [
+            "Yes, very safe.",
+            "No, danger.",
+            "Safe is box.",
+            "Run away."
+        ],
+        "choices_jp": [
+            "はい、とても安全です。",
+            "いいえ、危険です。",
+            "金庫は箱です。",
+            "逃げて。"
+        ],
+        "answer": 0,
+        "explanation": "治安確認。"
+    },
+    {
+        "id": "q_trv_0031",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I take pictures?",
+        "question_jp": "写真を撮ってもいいですか？",
+        "choices": [
+            "No flash, please.",
+            "Take a picture.",
+            "Camera is black.",
+            "Yes, no."
+        ],
+        "choices_jp": [
+            "フラッシュは禁止です。",
+            "写真を撮って。",
+            "カメラは黒です。",
+            "はい、いいえ。"
+        ],
+        "answer": 0,
+        "explanation": "許可。"
+    },
+    {
+        "id": "q_trv_0032",
+        "level": 2,
+        "category": "travel",
+        "question": "Where can I buy tickets?",
+        "question_jp": "チケットはどこで買えますか？",
+        "choices": [
+            "At the counter.",
+            "Ticket is paper.",
+            "Buy me one.",
+            "Free entry."
+        ],
+        "choices_jp": [
+            "カウンターで。",
+            "チケットは紙です。",
+            "私に一枚買って。",
+            "入場無料。"
+        ],
+        "answer": 0,
+        "explanation": "購入場所。"
+    },
+    {
+        "id": "q_trv_0033",
+        "level": 2,
+        "category": "travel",
+        "question": "What time is the next bus?",
+        "question_jp": "次のバスは何時ですか？",
+        "choices": [
+            "In 10 minutes.",
+            "Bus is late.",
+            "Next is now.",
+            "I don't know."
+        ],
+        "choices_jp": [
+            "10分後です。",
+            "バスは遅れています。",
+            "次は今です。",
+            "知りません。"
+        ],
+        "answer": 0,
+        "explanation": "時間確認。"
+    },
+    {
+        "id": "q_trv_0034",
+        "level": 2,
+        "category": "travel",
+        "question": "I am lost.",
+        "question_jp": "道に迷いました。",
+        "choices": [
+            "Let me see your map.",
+            "Lose weight.",
+            "Find yourself.",
+            "Stay there."
+        ],
+        "choices_jp": [
+            "地図を見せてください。",
+            "痩せる。",
+            "自分を見つける。",
+            "そこにいて。"
+        ],
+        "answer": 0,
+        "explanation": "迷子。"
+    },
+    {
+        "id": "q_trv_0035",
+        "level": 2,
+        "category": "travel",
+        "question": "Can you help me?",
+        "question_jp": "助けてくれませんか？",
+        "choices": [
+            "Of course.",
+            "No help.",
+            "I am busy.",
+            "Good bye."
+        ],
+        "choices_jp": [
+            "もちろん。",
+            "助けなし。",
+            "忙しいです。",
+            "さようなら。"
+        ],
+        "answer": 0,
+        "explanation": "援助依頼。"
+    },
+    {
+        "id": "q_trv_0036",
+        "level": 2,
+        "category": "travel",
+        "question": "Do you recommend this?",
+        "question_jp": "これをおすすめしますか？",
+        "choices": [
+            "Yes, it's very popular.",
+            "No, it's bad.",
+            "Recommendation.",
+            "You choose."
+        ],
+        "choices_jp": [
+            "はい、とても人気があります。",
+            "いいえ、悪いです。",
+            "おすすめ。",
+            "あなたが選んで。"
+        ],
+        "answer": 0,
+        "explanation": "評判確認。"
+    },
+    {
+        "id": "q_trv_0037",
+        "level": 2,
+        "category": "travel",
+        "question": "Is tax included?",
+        "question_jp": "税込みですか？",
+        "choices": [
+            "Yes, it is.",
+            "Tax free.",
+            "Pay tax.",
+            "No."
+        ],
+        "choices_jp": [
+            "はい、そうです。",
+            "免税。",
+            "税金を払う。",
+            "いいえ。"
+        ],
+        "answer": 0,
+        "explanation": "価格確認。"
+    },
+    {
+        "id": "q_trv_0038",
+        "level": 2,
+        "category": "travel",
+        "question": "I have an allergy.",
+        "question_jp": "アレルギーがあります。",
+        "choices": [
+            "What are you allergic to?",
+            "Don't eat.",
+            "Allergy is bad.",
+            "Be careful."
+        ],
+        "choices_jp": [
+            "何のアレルギーですか？",
+            "食べないで。",
+            "アレルギーは悪いです。",
+            "気をつけて。"
+        ],
+        "answer": 0,
+        "explanation": "食事制限。"
+    },
+    {
+        "id": "q_trv_0039",
+        "level": 2,
+        "category": "travel",
+        "question": "Can I have a receipt?",
+        "question_jp": "領収書をもらえますか？",
+        "choices": [
+            "Yes, wait a moment.",
+            "No receipt.",
+            "Paper is out.",
+            "Here."
+        ],
+        "choices_jp": [
+            "はい、少々お待ちください。",
+            "領収書なし。",
+            "紙切れです。",
+            "ほら。"
+        ],
+        "answer": 0,
+        "explanation": "会計後。"
+    },
+    {
+        "id": "q_trv_0040",
+        "level": 2,
+        "category": "travel",
+        "question": "Thank you for your help.",
+        "question_jp": "助けてくれてありがとう。",
+        "choices": [
+            "My pleasure.",
+            "You help me.",
+            "No thank you.",
+            "Good."
+        ],
+        "choices_jp": [
+            "どういたしまして（喜びです）。",
+            "私を助けて。",
+            "いいえ結構。",
+            "良い。"
+        ],
+        "answer": 0,
+        "explanation": "感謝。"
+    }
+]
